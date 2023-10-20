@@ -1,6 +1,8 @@
+import allure
+
 from pages.chapter1.prepositions.Prepositions_of_time import PrepositionsOfTimePage
 
-
+@allure.title('Test Prepositions OfT ime Page')
 class TestPrepositionsOfTimePage:
     def test_check_main_page(self, driver):
         main_page = PrepositionsOfTimePage(driver, 'https://english.areso.pro/lesson.html?lesson=prepositions_of_time')
