@@ -22,10 +22,10 @@ class BasePage:
         with allure.step(f'Open page: {self.url}'):
             self.driver.get(self.url)
 
-    @allure.step('Check element is visible and clickable')
     def element_is_presence_and_clickable(self, locator):
-        return (Wait(self.driver, self.timeout).until(ec.visibility_of_element_located(locator)) and
-                self.elements_is_clickable(locator))
+        with allure.step(f'Check element is visible and clickable: {locator}'):
+            return (Wait(self.driver, self.timeout).until(ec.visibility_of_element_located(locator)) and
+                    self.elements_is_clickable(locator))
 
     @allure.step('Check element is visible')
     def element_is_visible(self, locator):
@@ -36,13 +36,13 @@ class BasePage:
     def elements_are_visible(self, locator):
         return Wait(self.driver, self.timeout).until(ec.visibility_of_all_elements_located(locator))
 
-    @allure.step('Check element is present')
     def element_is_presence(self, locator):
-        return Wait(self.driver, self.timeout).until(ec.presence_of_element_located(locator))
+        with allure.step(f'Check element is presence: {locator}'):
+            return Wait(self.driver, self.timeout).until(ec.presence_of_element_located(locator))
 
-    @allure.step('Check elements are present')
     def elements_are_presence(self, locator):
-        return Wait(self.driver, self.timeout).until(ec.presence_of_all_elements_located(locator))
+        with allure.step(f'Check elements are presence: {locator}'):
+            return Wait(self.driver, self.timeout).until(ec.presence_of_all_elements_located(locator))
 
     @allure.step('Check elements is not visible')
     def elements_is_not_visible(self, locator):
@@ -67,9 +67,9 @@ class BasePage:
 
     @allure.step('check_selected_radio_button')
     def check_selected_radio_button(self, index):
-        print('Radio button is selected:', self.driver.execute_script(f'return(document.getElementsByName("possibleAnswers")[{index}].checked)'))
         result = self.driver.execute_script(f'return(document.getElementsByName("possibleAnswers")[{index}].checked)')
-        return result
+        with allure.step(f'Check value of selected button: {result}'):
+            return result
 
     """"Данный метод убирает рекламный банер"""
 
@@ -114,7 +114,7 @@ class BasePage:
     @allure.step('Random choice from elements list')
     def random_choice_from_elements_list(self, elements_list_locator):
         empty_list = []
-        full_list = self.elements_are_present(elements_list_locator)
+        full_list = self.elements_are_presence(elements_list_locator)
         for t in full_list:
             empty_list.append(t.text)
         return random.choice(full_list)
