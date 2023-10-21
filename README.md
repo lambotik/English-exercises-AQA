@@ -1,5 +1,5 @@
 # English-exercises-AQA
-Tests for [https://github.com/Areso/English-exercises]
+Tests for [English-exercises](https://github.com/Areso/English-exercises)
 While this for simple run, later I'll correct it.
 
 1 ``` git clone https://github.com/lambotik/English-exercises-AQA.git```
