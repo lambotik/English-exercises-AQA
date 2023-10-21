@@ -7,6 +7,6 @@ While this for simple run, later I'll correct it.
    
 3 ```pip3 install -r requirements.txt```
    
-4 ```pytest -s -v --alluredir=test_result/ tests/```
+4 ```pytest -s -vv --alluredir=test_result/ tests/```
    
 5 ```allure serve test_result```
