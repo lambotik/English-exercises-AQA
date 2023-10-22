@@ -1,13 +1,14 @@
 import random
 
 import allure
+from selenium.webdriver.common.by import By
 
-from locators.main_page_locators import PrepositionsOfTimeLocators
+from locators.main_page_locators import PrepositionsLocators
 from pages.base_page import BasePage
 
 
-class PrepositionsOfTimePage(BasePage):
-    locators = PrepositionsOfTimeLocators()
+class PrepositionsPages(BasePage):
+    locators = PrepositionsLocators()
 
     def get_amount_of_cards(self):
         amount = int(self.element_is_presence(self.locators.AMOUNT_OF_CARDS).text)
@@ -23,7 +24,8 @@ class PrepositionsOfTimePage(BasePage):
         return question_text
 
     def check_radio_buttons(self):
-        random_index = random.randint(0, len(self.locators.LIST_OF_RADIO_BUTTONS))
+        random_index = random.randint(0, len(self.elements_are_presence(
+            (By.XPATH, '//div[@id="answer_radiobutton_div"] /input')))-1)
         selected_button = self.elements_are_presence(self.locators.LIST_OF_RADIO_BUTTONS)[random_index]
         selected_button.click()
         with allure.step(f"Customer selected: {selected_button.get_attribute('value')}."):

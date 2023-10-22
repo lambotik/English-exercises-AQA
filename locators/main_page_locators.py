@@ -1,12 +1,12 @@
 from selenium.webdriver.common.by import By
 
 
-class PrepositionsOfTimeLocators:
+class PrepositionsLocators:
     # 1/32
     AMOUNT_OF_CARDS = (By.XPATH, '//span[@id="spnTotal"]')
     CURRENT_CARD_NUMBER = (By.XPATH, '//span[@id="spnCurPos"]')
     QUESTION = (By.XPATH, '//div[@id="question"]')
-    LIST_OF_RADIO_BUTTONS = (By.XPATH, '// div[ @ id = "answer_radiobutton_div"] /input')
+    LIST_OF_RADIO_BUTTONS = (By.XPATH, '// div[@id = "answer_radiobutton_div"] /input')
     RADIO_BUTTON_ON = (By.XPATH, '//input[@value="on"]')
     RADIO_BUTTON_AT = (By.XPATH, '//input[@value="at"]')
     RADIO_BUTTON_IN = (By.XPATH, '//input[@value="in"]')
@@ -15,5 +15,3 @@ class PrepositionsOfTimeLocators:
     SHOW_ANSWER_BUTTON = (By.XPATH, '//button[@id="showAnswerBtn"]')
     NEXT_CARD_BUTTON = (By.XPATH, '//button[@id="nextBtn"]')
     CORRECT_ANSWER_TEXT = (By.XPATH, '//lbl[@id="resultLbl"]')
-
-
