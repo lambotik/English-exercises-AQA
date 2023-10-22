@@ -54,4 +54,14 @@ class TestPrepositionsOfTimePage:
         pprint(data2)
         assert data1 == data2, 'Question is repeated'
 
-
+    def test_args_is_not_presence(self, driver):
+        main_page = PrepositionsOfTimePage(driver, 'https://english.areso.pro/lesson.html?lesson=prepositions_of_time')
+        main_page.open()
+        amount_of_cards = main_page.get_amount_of_cards()
+        data = {}
+        for _ in range(amount_of_cards):
+            current_card_number = main_page.get_current_card_number()
+            question = main_page.get_question_text()
+            data[current_card_number] = question
+            assert 'args' not in question, 'Args is presence'
+            main_page.click_next_card()
