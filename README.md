@@ -14,5 +14,5 @@ While this for simple run, later I'll correct it.
    
 5 ```allure serve test_result```
 
-> [!NOTE]
-> Information the user should notice even if skimming.
+> [!IMPORTANT]
+> Essential information required for user success.
