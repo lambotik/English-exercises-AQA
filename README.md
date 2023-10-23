@@ -15,4 +15,4 @@ While this for simple run, later I'll correct it.
 ```allure serve test_result```
 
 
-> [button text](link to topic)
+> [button text](```allure serve test_result```)
