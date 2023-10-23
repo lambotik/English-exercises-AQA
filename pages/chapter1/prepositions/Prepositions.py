@@ -1,4 +1,5 @@
 import random
+from pprint import pprint
 
 import allure
 from selenium.webdriver.common.by import By
@@ -25,7 +26,7 @@ class PrepositionsPages(BasePage):
 
     def check_radio_buttons(self):
         random_index = random.randint(0, len(self.elements_are_presence(
-            (By.XPATH, '//div[@id="answer_radiobutton_div"] /input')))-1)
+            (By.XPATH, '//div[@id="answer_radiobutton_div"] /input'))) - 1)
         selected_button = self.elements_are_presence(self.locators.LIST_OF_RADIO_BUTTONS)[random_index]
         selected_button.click()
         with allure.step(f"Customer selected: {selected_button.get_attribute('value')}."):
@@ -53,3 +54,58 @@ class PrepositionsPages(BasePage):
     def click_next_card(self):
         button_next_card = self.element_is_presence_and_clickable(self.locators.NEXT_CARD_BUTTON)
         button_next_card.click()
+
+    # Methods
+    @staticmethod
+    def check_main_options(main_page):
+        amount_of_cards = main_page.get_amount_of_cards()
+        for i in range(amount_of_cards):
+            current_card_number = main_page.get_current_card_number()
+            with allure.step(f'\n{current_card_number}. Check card.'):
+                question = main_page.get_question_text()
+            with allure.step(f'Question: {question}'):
+                button_value, result = main_page.check_radio_buttons()
+            with allure.step(f'Customer selected: {button_value}'):
+                pass
+            with allure.step(f'\n\nValue of button is: {result}'):
+                pass
+                correct_or_wrong = main_page.check_answer()
+                correct_answer = main_page.check_correct_answer()
+            with allure.step(f'Should be: {correct_answer}'):
+                print(f'Should be: {correct_answer}')
+            with allure.step(f'Result should be:{correct_answer}'):
+                assert result is True, 'Clicked button is not selected'
+                try:
+                    assert button_value == correct_answer and correct_or_wrong == 'CORRECT'
+                    print('#' * 10, "It's right answer.", '#' * 10)
+                    print('\n')
+                except Exception as ex:
+                    print('\n', ex, '\n', '#' * 10, 'Wrong answer!', '#' * 10, '\n')
+                main_page.click_next_card()
+            with allure.step('*' * 90):
+                pass
+    @staticmethod
+    def check_questions_no_repeated(main_page):
+        amount_of_cards = main_page.get_amount_of_cards()
+        data1 = {}
+        data2 = {}
+        for _ in range(amount_of_cards):
+            current_card_number = main_page.get_current_card_number()
+            question = main_page.get_question_text()
+            data1[current_card_number] = question
+            if question not in list(data2.values()):
+                data2[current_card_number] = question
+            main_page.click_next_card()
+        pprint(data1)
+        pprint(data2)
+        return data1, data2
+    @staticmethod
+    def check_args_is_not_presence(main_page):
+        amount_of_cards = main_page.get_amount_of_cards()
+        data = {}
+        for _ in range(amount_of_cards):
+            current_card_number = main_page.get_current_card_number()
+            question = main_page.get_question_text()
+            data[current_card_number] = question
+            assert 'args' not in question, 'Args is presence'
+            main_page.click_next_card()
