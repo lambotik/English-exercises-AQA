@@ -3,7 +3,7 @@ Tests for [English-exercises](https://github.com/Areso/English-exercises)
 
 
 While this for simple run, later I'll correct it.
-> [!IMPORTANT]
+> [!Preconditions for running tests]
 > ```git clone https://github.com/lambotik/English-exercises-AQA.git```
 >
 > ```cd English-exercises-AQA```
