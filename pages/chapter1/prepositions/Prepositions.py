@@ -58,6 +58,25 @@ class PrepositionsPages(BasePage):
     # Methods
     @staticmethod
     def check_main_options(main_page):
+        """
+        This method performs basic checks common to all cards.
+        This is the display of elements and the ability to click on buttons.
+
+        :param main_page: current driver state
+
+        amount_of_cards -> int   &(show quantity of cards)
+
+        question -> str   &(current question text)
+
+        button_value -> str   &(value of selected button)
+
+        result -> bool   &(will check if the element is actually selected (True or False))
+
+        correct_or_wrong -> str   &(Shows the response value)
+
+        correct_answer -> str    &(Shows correct answer)
+
+        """
         amount_of_cards = main_page.get_amount_of_cards()
         for i in range(amount_of_cards):
             current_card_number = main_page.get_current_card_number()
@@ -84,8 +103,17 @@ class PrepositionsPages(BasePage):
                 main_page.click_next_card()
             with allure.step('*' * 90):
                 pass
+
     @staticmethod
     def check_questions_no_repeated(main_page):
+        """
+        This method goes through all the cards and creates two dictionaries;
+        all questions are added to one, only if they have not been repeated before.
+        At the end of the cycle, the dictionaries are compared.
+        :param main_page: current driver state
+
+        :return: dict1, dict2
+        """
         amount_of_cards = main_page.get_amount_of_cards()
         data1 = {}
         data2 = {}
@@ -99,8 +127,15 @@ class PrepositionsPages(BasePage):
         pprint(data1)
         pprint(data2)
         return data1, data2
+
     @staticmethod
     def check_args_is_not_presence(main_page):
+        """
+        This method goes through all the cards and checks whether the (args) value
+        from the devtools has reached the client.
+        :param main_page:
+        :return:
+        """
         amount_of_cards = main_page.get_amount_of_cards()
         data = {}
         for _ in range(amount_of_cards):

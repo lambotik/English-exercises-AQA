@@ -1,5 +1,3 @@
-from pprint import pprint
-
 import allure
 
 from pages.chapter1.prepositions.Prepositions import PrepositionsPages
