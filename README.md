@@ -16,3 +16,4 @@ While this for simple run, later I'll correct it.
 
 
 <ResourceGroupName>
+<Name>Dima</Name>
