@@ -12,5 +12,6 @@ While this for simple run, later I'll correct it.
    
 4 ```pytest -s -vv --alluredir=test_result/ tests/```
    
-5 [!NOTE] ```allure serve test_result```
+5 ```allure serve test_result```
 
+[!NOTE]
