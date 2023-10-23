@@ -1,6 +1,7 @@
 # English-exercises-AQA
 Tests for [English-exercises](https://github.com/Areso/English-exercises)
-
+> [!div class="nextstepaction"]
+> [Learn about adding code to articles](code-in-docs.md)
 
 While this for simple run, later I'll correct it.
 
