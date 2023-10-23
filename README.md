@@ -13,7 +13,3 @@ While this for simple run, later I'll correct it.
 ```pytest -s -vv --alluredir=test_result/ tests/```
  
 ```allure serve test_result```
-
-
-> [!div class="nextstepaction"]
-> [button text](link to topic)
