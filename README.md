@@ -15,4 +15,4 @@ While this for simple run, later I'll correct it.
 ```allure serve test_result```
 
 
-> This is a blockquote. It is usually rendered indented and with a different background color.
+> [button text](link to topic)
