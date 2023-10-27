@@ -24,36 +24,51 @@ class BasePage:
 
     def element_is_presence_and_clickable(self, locator):
         with allure.step(f'Check element is visible and clickable: {locator}'):
-            return (Wait(self.driver, self.timeout).until(ec.visibility_of_element_located(locator)) and
-                    self.elements_is_clickable(locator))
+            return (Wait(self.driver, self.timeout).until(ec.visibility_of_element_located(locator),
+                                                          message=f"Can't find element by locator {locator}") and
+                    self.element_is_clickable(locator))
 
-    @allure.step('Check element is visible')
     def element_is_visible(self, locator):
-        self.go_to_element(self.element_is_presence(locator))
-        return Wait(self.driver, self.timeout).until(ec.visibility_of_element_located(locator))
+        with allure.step(f'Check element is visible: {locator}'):
+            self.go_to_element(self.element_is_presence(locator))
+            return Wait(self.driver, self.timeout).until(ec.visibility_of_element_located(locator),
+                                                         message=f"Can't find element by locator {locator}")
 
-    @allure.step('Check elements are visible')
     def elements_are_visible(self, locator):
-        return Wait(self.driver, self.timeout).until(ec.visibility_of_all_elements_located(locator))
+        with allure.step(f'Check elements are visible: {locator}'):
+            return Wait(self.driver, self.timeout).until(ec.visibility_of_all_elements_located(locator),
+                                                         message=f"Can't find elements by locator {locator}")
 
     def element_is_presence(self, locator):
         with allure.step(f'Check element is presence: {locator}'):
-            return Wait(self.driver, self.timeout).until(ec.presence_of_element_located(locator))
+            return Wait(self.driver, self.timeout).until(ec.presence_of_element_located(locator),
+                                                         message=f"Can't find element by locator {locator}")
 
     def elements_are_presence(self, locator):
         with allure.step(f'Check elements are presence: {locator}'):
-            return Wait(self.driver, self.timeout).until(ec.presence_of_all_elements_located(locator))
+            return Wait(self.driver, self.timeout).until(ec.presence_of_all_elements_located(locator),
+                                                         message=f"Can't find elements by locator {locator}")
 
-    @allure.step('Check elements is not visible')
     def elements_is_not_visible(self, locator):
-        return Wait(self.driver, self.timeout).until(ec.invisibility_of_element(locator))
+        with allure.step(f'Check elements is not visible: {locator}'):
+            return Wait(self.driver, self.timeout).until(ec.invisibility_of_element(locator),
+                                                         message=f"Can't find element by locator {locator}")
 
-    @allure.step('Check elements is clickable')
-    def elements_is_clickable(self, locator):
-        return Wait(self.driver, self.timeout).until(ec.element_to_be_clickable(locator))
+    @allure.step('Check element is clickable')
+    def element_is_clickable(self, locator):
+        with allure.step(f'Check elements are clickable: {locator}'):
+            return Wait(self.driver, self.timeout).until(ec.element_to_be_clickable(locator),
+                                                         message=f"Can't find element by locator {locator}")
 
     def go_to_element(self, element):
-        return self.driver.execute_script("arguments[0].scrollIntoView();", element)
+        with allure.step(f'Go to element: {element}'):
+            return self.driver.execute_script("arguments[0].scrollIntoView({ block: 'center'});", element)
+
+    def scroll_to_visible_element(self, locator):
+        with allure.step(f'Scroll to element: {locator}'):
+            self.go_to_element(self.element_is_presence(locator))
+            return Wait(self.driver, self.timeout).until(ec.element_to_be_clickable(locator),
+                                                         message=f"Can't find element by locator {locator}")
 
     @allure.step('Click enter to element')
     def click_enter_to_element(self, locator):
