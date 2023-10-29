@@ -1,20 +1,16 @@
-name: Check_Regression
+name: UI Tests
 
 on: workflow_dispatch
 
-
-permissions:
-  contents: read
-
 jobs:
-  build:
+  ui-tests:
     runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
 
-      - uses: actions/checkout@v2
+    steps:
+      
+      - uses: actions/checkout@v3
       - name: Set up Python 3.10
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: "3.10"
       - name: Install Chrome
@@ -42,20 +38,36 @@ jobs:
           echo GIT_COMMIT_AUTHOR_NAME=$(git show -s --format='%ae' HEAD) >> environment.properties
           echo GIT_COMMIT_TIME=$(git show -s --format=%ci HEAD) >> environment.properties
           echo CHROME_VERSION=$(google-chrome --product-version) >> environment.properties
-      - name: Allure results
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        id: allure-report
-        with:
-          allure_results: allure-results
-          allure_report: allure-report
-          gh_pages: gh-pages
-          allure_history: allure-history
 
-      - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v3
+          
+
+      - name: Checkout (copy) gh-pages repository to GitHub runner
+        uses: actions/checkout@v3
         with:
-          PERSONAL_TOKEN: ${{ secrets.CI_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+          ref: gh-pages
+          path: ./.github/gh-pages
+
+
+
+      
+
+      - name: Copy history from gh-pages to allure-results
+        run: |
+          sudo mkdir -p allure-results/history
+          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+
+      - name: Generate Allure report
+        run: |
+          sudo docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+
+      - name: Update Allure history
+        run: |
+          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.CI_TOKEN }}
+          branch: gh-pages
+          folder: allure-report
+          clean: true
