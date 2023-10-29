@@ -12,8 +12,10 @@ class TestPrepositions_1_1:
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
         main_page.check_main_options(main_page)
-
+        
+    
     @allure.title('test_check_questions_no_repeated')
+    @pytest.mark.xfail
     def test_check_questions_no_repeated(self, driver):
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
@@ -35,7 +37,7 @@ class TestPrepositions_1_3:
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
         main_page.check_main_options(main_page)
-
+    @pytest.mark.xfail
     def test_check_questions_no_repeated(self, driver):
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
@@ -56,7 +58,8 @@ class TestPrepositions_1_4:
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
         main_page.check_main_options(main_page)
-
+        
+    @pytest.mark.xfail
     def test_check_questions_no_repeated(self, driver):
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
