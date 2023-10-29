@@ -1,5 +1,5 @@
 import allure
-
+import pytest
 from pages.chapter1.prepositions.Prepositions import PrepositionsPages
 
 
@@ -37,6 +37,7 @@ class TestPrepositions_1_3:
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
         main_page.check_main_options(main_page)
+        
     @pytest.mark.xfail
     def test_check_questions_no_repeated(self, driver):
         main_page = PrepositionsPages(driver, self.url)
