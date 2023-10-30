@@ -1,3 +1,5 @@
+import os
+
 import allure
 import pytest
 from pages.chapter1.prepositions.Prepositions import PrepositionsPages
@@ -15,6 +17,7 @@ class TestChapter1:
         @allure.severity('NORMAL')
         @allure.id(1)
         def test_check_main_options(self, driver):
+            allure.dynamic.parameter("work-dir", os.getcwd(), excluded=True)
             main_page = PrepositionsPages(driver, self.url)
             main_page.open()
             main_page.check_main_options(main_page)

@@ -1,5 +1,4 @@
 import random
-from pprint import pprint
 
 import allure
 from selenium.webdriver.common.by import By
@@ -124,8 +123,8 @@ class PrepositionsPages(BasePage):
             if question not in list(data2.values()):
                 data2[current_card_number] = question
             main_page.click_next_card()
-        pprint(data1)
-        pprint(data2)
+        # pprint(data1)
+        # pprint(data2)
         return data1, data2
 
     @staticmethod
