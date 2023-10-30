@@ -1,166 +1,43 @@
 {
-  "0a28e478a677ded00b8598cf9253bd4f" : {
+  "4e46bb659ab9155d6f767ba85874b2ed" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "8f4b06ec18487f21",
-      "status" : "passed",
+      "uid" : "9b5c822f7691ede5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55c4ac28dfb3 <unknown>\n#1 0x55c4abf614a7 <unknown>\n#2 0x55c4abf94c93 <unknown>\n#3 0x55c4abf9110c <unknown>\n#4 0x55c4abfd3ac6 <unknown>\n#5 0x55c4abfca713 <unknown>\n#6 0x55c4abf9d18b <unknown>\n#7 0x55c4abf9df7e <unknown>\n#8 0x55c4ac2538d8 <unknown>\n#9 0x55c4ac257800 <unknown>\n#10 0x55c4ac261cfc <unknown>\n#11 0x55c4ac258418 <unknown>\n#12 0x55c4ac22542f <unknown>\n#13 0x55c4ac27c4e8 <unknown>\n#14 0x55c4ac27c6b4 <unknown>\n#15 0x55c4ac28d143 <unknown>\n#16 0x7f0ad2294ac3 <unknown>",
       "time" : {
-        "start" : 1698682461015,
-        "stop" : 1698682466946,
-        "duration" : 5931
-      }
-    }, {
-      "uid" : "3b84b7a889c452a0",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682138547,
-        "stop" : 1698682144172,
-        "duration" : 5625
-      }
-    }, {
-      "uid" : "b92dd7abb1bfd011",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698681815785,
-        "stop" : 1698681821758,
-        "duration" : 5973
-      }
-    }, {
-      "uid" : "6082188d901a1655",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698680723252,
-        "stop" : 1698680728604,
-        "duration" : 5352
-      }
-    }, {
-      "uid" : "12b77e74f180b1e7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679314208,
-        "stop" : 1698679321254,
-        "duration" : 7046
-      }
-    }, {
-      "uid" : "b5f75db80fbd2797",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679029727,
-        "stop" : 1698679036276,
-        "duration" : 6549
-      }
-    }, {
-      "uid" : "365445952be0b7c7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698678016648,
-        "stop" : 1698678024118,
-        "duration" : 7470
-      }
-    }, {
-      "uid" : "d49064dd6c23648e",
-      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/d49064dd6c23648e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698607601201,
-        "stop" : 1698607606509,
-        "duration" : 5308
-      }
-    } ]
-  },
-  "54040ce945b4c00afc7b3860eff5700d" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
-      "unknown" : 0,
-      "total" : 8
-    },
-    "items" : [ {
-      "uid" : "9cdc5e5a2287fd1f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682471686,
-        "stop" : 1698682474218,
-        "duration" : 2532
-      }
-    }, {
-      "uid" : "54fda29dd029b2cd",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682148403,
-        "stop" : 1698682150772,
-        "duration" : 2369
-      }
-    }, {
-      "uid" : "23c5de487830f334",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698681826169,
-        "stop" : 1698681828566,
-        "duration" : 2397
-      }
-    }, {
-      "uid" : "4fec3a0a77bb9f72",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698680732959,
-        "stop" : 1698680735459,
-        "duration" : 2500
-      }
-    }, {
-      "uid" : "11fe9ed1a0340fb2",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679326234,
-        "stop" : 1698679329369,
-        "duration" : 3135
-      }
-    }, {
-      "uid" : "23c174ee6bcfb356",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679040983,
-        "stop" : 1698679043826,
-        "duration" : 2843
-      }
-    }, {
-      "uid" : "576b390a270d6252",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698678029144,
-        "stop" : 1698678032208,
-        "duration" : 3064
-      }
-    }, {
-      "uid" : "67d5698395457b1",
-      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/67d5698395457b1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698607610684,
-        "stop" : 1698607613101,
-        "duration" : 2417
+        "start" : 1698686852420,
+        "stop" : 1698686852420,
+        "duration" : 0
       }
     } ]
   },
   "6f398537d91ac572fa9a4bfae337a75f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "9c6c0129237fe0d1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5604eba44fb3 <unknown>\n#1 0x5604eb7184a7 <unknown>\n#2 0x5604eb74bc93 <unknown>\n#3 0x5604eb74810c <unknown>\n#4 0x5604eb78aac6 <unknown>\n#5 0x5604eb781713 <unknown>\n#6 0x5604eb75418b <unknown>\n#7 0x5604eb754f7e <unknown>\n#8 0x5604eba0a8d8 <unknown>\n#9 0x5604eba0e800 <unknown>\n#10 0x5604eba18cfc <unknown>\n#11 0x5604eba0f418 <unknown>\n#12 0x5604eb9dc42f <unknown>\n#13 0x5604eba334e8 <unknown>\n#14 0x5604eba336b4 <unknown>\n#15 0x5604eba44143 <unknown>\n#16 0x7f0781294ac3 <unknown>",
+      "time" : {
+        "start" : 1698686832373,
+        "stop" : 1698686832373,
+        "duration" : 0
+      }
+    }, {
       "uid" : "b4a17c15a1811d5d",
       "status" : "passed",
       "time" : {
@@ -227,16 +104,495 @@
       }
     } ]
   },
-  "50ff95f302c90f6f85b299038e16429f" : {
+  "551f75b3e67683012fe645696f29e60d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "346496959658f19a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558f2bff7fb3 <unknown>\n#1 0x558f2bccb4a7 <unknown>\n#2 0x558f2bcfec93 <unknown>\n#3 0x558f2bcfb10c <unknown>\n#4 0x558f2bd3dac6 <unknown>\n#5 0x558f2bd34713 <unknown>\n#6 0x558f2bd0718b <unknown>\n#7 0x558f2bd07f7e <unknown>\n#8 0x558f2bfbd8d8 <unknown>\n#9 0x558f2bfc1800 <unknown>\n#10 0x558f2bfcbcfc <unknown>\n#11 0x558f2bfc2418 <unknown>\n#12 0x558f2bf8f42f <unknown>\n#13 0x558f2bfe64e8 <unknown>\n#14 0x558f2bfe66b4 <unknown>\n#15 0x558f2bff7143 <unknown>\n#16 0x7f20f1494ac3 <unknown>",
+      "time" : {
+        "start" : 1698686845875,
+        "stop" : 1698686845875,
+        "duration" : 0
+      }
+    } ]
+  },
+  "08247f66dd53a252398d07a04c8101ca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f27b92c4c40edb7f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x556ab6f2bfb3 <unknown>\n#1 0x556ab6bff4a7 <unknown>\n#2 0x556ab6c32c93 <unknown>\n#3 0x556ab6c2f10c <unknown>\n#4 0x556ab6c71ac6 <unknown>\n#5 0x556ab6c68713 <unknown>\n#6 0x556ab6c3b18b <unknown>\n#7 0x556ab6c3bf7e <unknown>\n#8 0x556ab6ef18d8 <unknown>\n#9 0x556ab6ef5800 <unknown>\n#10 0x556ab6effcfc <unknown>\n#11 0x556ab6ef6418 <unknown>\n#12 0x556ab6ec342f <unknown>\n#13 0x556ab6f1a4e8 <unknown>\n#14 0x556ab6f1a6b4 <unknown>\n#15 0x556ab6f2b143 <unknown>\n#16 0x7f2c9a294ac3 <unknown>",
+      "time" : {
+        "start" : 1698686847291,
+        "stop" : 1698686847291,
+        "duration" : 0
+      }
+    } ]
+  },
+  "38f1b5208aec63363790d001cef7d32b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "97b3051815081759",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564c320cafb3 <unknown>\n#1 0x564c31d9e4a7 <unknown>\n#2 0x564c31dd1c93 <unknown>\n#3 0x564c31dce10c <unknown>\n#4 0x564c31e10ac6 <unknown>\n#5 0x564c31e07713 <unknown>\n#6 0x564c31dda18b <unknown>\n#7 0x564c31ddaf7e <unknown>\n#8 0x564c320908d8 <unknown>\n#9 0x564c32094800 <unknown>\n#10 0x564c3209ecfc <unknown>\n#11 0x564c32095418 <unknown>\n#12 0x564c3206242f <unknown>\n#13 0x564c320b94e8 <unknown>\n#14 0x564c320b96b4 <unknown>\n#15 0x564c320ca143 <unknown>\n#16 0x7fbc9d294ac3 <unknown>",
+      "time" : {
+        "start" : 1698686851001,
+        "stop" : 1698686851001,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6f2c388fae7d2dbbc2521e0e4205590d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f09718ce166aa11",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55c032674fb3 <unknown>\n#1 0x55c0323484a7 <unknown>\n#2 0x55c03237bc93 <unknown>\n#3 0x55c03237810c <unknown>\n#4 0x55c0323baac6 <unknown>\n#5 0x55c0323b1713 <unknown>\n#6 0x55c03238418b <unknown>\n#7 0x55c032384f7e <unknown>\n#8 0x55c03263a8d8 <unknown>\n#9 0x55c03263e800 <unknown>\n#10 0x55c032648cfc <unknown>\n#11 0x55c03263f418 <unknown>\n#12 0x55c03260c42f <unknown>\n#13 0x55c0326634e8 <unknown>\n#14 0x55c0326636b4 <unknown>\n#15 0x55c032674143 <unknown>\n#16 0x7f563ac94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686848879,
+        "stop" : 1698686848879,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dbf888370986eb8b8a9dc1de6e1f8bf7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ec1a99db0da65d09",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56476b9a5fb3 <unknown>\n#1 0x56476b6794a7 <unknown>\n#2 0x56476b6acc93 <unknown>\n#3 0x56476b6a910c <unknown>\n#4 0x56476b6ebac6 <unknown>\n#5 0x56476b6e2713 <unknown>\n#6 0x56476b6b518b <unknown>\n#7 0x56476b6b5f7e <unknown>\n#8 0x56476b96b8d8 <unknown>\n#9 0x56476b96f800 <unknown>\n#10 0x56476b979cfc <unknown>\n#11 0x56476b970418 <unknown>\n#12 0x56476b93d42f <unknown>\n#13 0x56476b9944e8 <unknown>\n#14 0x56476b9946b4 <unknown>\n#15 0x56476b9a5143 <unknown>\n#16 0x7f90c5e94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686838060,
+        "stop" : 1698686838060,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f331ccbe32f1b5648ac080c27e917edd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "cbc0e3994419fae",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x555e70354fb3 <unknown>\n#1 0x555e700284a7 <unknown>\n#2 0x555e7005bc93 <unknown>\n#3 0x555e7005810c <unknown>\n#4 0x555e7009aac6 <unknown>\n#5 0x555e70091713 <unknown>\n#6 0x555e7006418b <unknown>\n#7 0x555e70064f7e <unknown>\n#8 0x555e7031a8d8 <unknown>\n#9 0x555e7031e800 <unknown>\n#10 0x555e70328cfc <unknown>\n#11 0x555e7031f418 <unknown>\n#12 0x555e702ec42f <unknown>\n#13 0x555e703434e8 <unknown>\n#14 0x555e703436b4 <unknown>\n#15 0x555e70354143 <unknown>\n#16 0x7f38b0094ac3 <unknown>",
+      "time" : {
+        "start" : 1698686833789,
+        "stop" : 1698686833789,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "221d37fefceb6573",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682489346,
+        "stop" : 1698682493108,
+        "duration" : 3762
+      }
+    }, {
+      "uid" : "6d378dc1d5165bee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682165192,
+        "stop" : 1698682168234,
+        "duration" : 3042
+      }
+    }, {
+      "uid" : "b9afc97ab782a7da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698681842737,
+        "stop" : 1698681845926,
+        "duration" : 3189
+      }
+    }, {
+      "uid" : "5d714071f7c77aa4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698680749091,
+        "stop" : 1698680752094,
+        "duration" : 3003
+      }
+    }, {
+      "uid" : "b1f466d394a7c29c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679346666,
+        "stop" : 1698679350652,
+        "duration" : 3986
+      }
+    }, {
+      "uid" : "783e38e21255534f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679059810,
+        "stop" : 1698679063353,
+        "duration" : 3543
+      }
+    }, {
+      "uid" : "f6eecfee8168b5d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698678049814,
+        "stop" : 1698678053610,
+        "duration" : 3796
+      }
+    }, {
+      "uid" : "2852e90a61e7cf77",
+      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/2852e90a61e7cf77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698607626697,
+        "stop" : 1698607629772,
+        "duration" : 3075
+      }
+    } ]
+  },
+  "8f83982ef858f96f3b131878dcfc5219" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2bc48c7f425253a3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558b62793fb3 <unknown>\n#1 0x558b624674a7 <unknown>\n#2 0x558b6249ac93 <unknown>\n#3 0x558b6249710c <unknown>\n#4 0x558b624d9ac6 <unknown>\n#5 0x558b624d0713 <unknown>\n#6 0x558b624a318b <unknown>\n#7 0x558b624a3f7e <unknown>\n#8 0x558b627598d8 <unknown>\n#9 0x558b6275d800 <unknown>\n#10 0x558b62767cfc <unknown>\n#11 0x558b6275e418 <unknown>\n#12 0x558b6272b42f <unknown>\n#13 0x558b627824e8 <unknown>\n#14 0x558b627826b4 <unknown>\n#15 0x558b62793143 <unknown>\n#16 0x7f0971e94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686835208,
+        "stop" : 1698686835208,
+        "duration" : 0
+      }
+    } ]
+  },
+  "608cb192057b7e39984b59a2ed7371a7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "36c1d22eec74da9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55de8062afb3 <unknown>\n#1 0x55de802fe4a7 <unknown>\n#2 0x55de80331c93 <unknown>\n#3 0x55de8032e10c <unknown>\n#4 0x55de80370ac6 <unknown>\n#5 0x55de80367713 <unknown>\n#6 0x55de8033a18b <unknown>\n#7 0x55de8033af7e <unknown>\n#8 0x55de805f08d8 <unknown>\n#9 0x55de805f4800 <unknown>\n#10 0x55de805fecfc <unknown>\n#11 0x55de805f5418 <unknown>\n#12 0x55de805c242f <unknown>\n#13 0x55de806194e8 <unknown>\n#14 0x55de806196b4 <unknown>\n#15 0x55de8062a143 <unknown>\n#16 0x7ff2b8494ac3 <unknown>",
+      "time" : {
+        "start" : 1698686849585,
+        "stop" : 1698686849585,
+        "duration" : 0
+      }
+    } ]
+  },
+  "0a28e478a677ded00b8598cf9253bd4f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    },
+    "items" : [ {
+      "uid" : "76a39fb404296f21",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55bde4639fb3 <unknown>\n#1 0x55bde430d4a7 <unknown>\n#2 0x55bde4340c93 <unknown>\n#3 0x55bde433d10c <unknown>\n#4 0x55bde437fac6 <unknown>\n#5 0x55bde4376713 <unknown>\n#6 0x55bde434918b <unknown>\n#7 0x55bde4349f7e <unknown>\n#8 0x55bde45ff8d8 <unknown>\n#9 0x55bde4603800 <unknown>\n#10 0x55bde460dcfc <unknown>\n#11 0x55bde4604418 <unknown>\n#12 0x55bde45d142f <unknown>\n#13 0x55bde46284e8 <unknown>\n#14 0x55bde46286b4 <unknown>\n#15 0x55bde4639143 <unknown>\n#16 0x7f2b8ea94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686830098,
+        "stop" : 1698686830098,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8f4b06ec18487f21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682461015,
+        "stop" : 1698682466946,
+        "duration" : 5931
+      }
+    }, {
+      "uid" : "3b84b7a889c452a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682138547,
+        "stop" : 1698682144172,
+        "duration" : 5625
+      }
+    }, {
+      "uid" : "b92dd7abb1bfd011",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698681815785,
+        "stop" : 1698681821758,
+        "duration" : 5973
+      }
+    }, {
+      "uid" : "6082188d901a1655",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698680723252,
+        "stop" : 1698680728604,
+        "duration" : 5352
+      }
+    }, {
+      "uid" : "12b77e74f180b1e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679314208,
+        "stop" : 1698679321254,
+        "duration" : 7046
+      }
+    }, {
+      "uid" : "b5f75db80fbd2797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679029727,
+        "stop" : 1698679036276,
+        "duration" : 6549
+      }
+    }, {
+      "uid" : "365445952be0b7c7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698678016648,
+        "stop" : 1698678024118,
+        "duration" : 7470
+      }
+    }, {
+      "uid" : "d49064dd6c23648e",
+      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/d49064dd6c23648e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698607601201,
+        "stop" : 1698607606509,
+        "duration" : 5308
+      }
+    } ]
+  },
+  "ea1928fbe5f8977819d8a99d3a29abf3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1516fe2715d086dd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558903a7dfb3 <unknown>\n#1 0x5589037514a7 <unknown>\n#2 0x558903784c93 <unknown>\n#3 0x55890378110c <unknown>\n#4 0x5589037c3ac6 <unknown>\n#5 0x5589037ba713 <unknown>\n#6 0x55890378d18b <unknown>\n#7 0x55890378df7e <unknown>\n#8 0x558903a438d8 <unknown>\n#9 0x558903a47800 <unknown>\n#10 0x558903a51cfc <unknown>\n#11 0x558903a48418 <unknown>\n#12 0x558903a1542f <unknown>\n#13 0x558903a6c4e8 <unknown>\n#14 0x558903a6c6b4 <unknown>\n#15 0x558903a7d143 <unknown>\n#16 0x7ff7a4894ac3 <unknown>",
+      "time" : {
+        "start" : 1698686850293,
+        "stop" : 1698686850294,
+        "duration" : 1
+      }
+    } ]
+  },
+  "7c93b649e0b54b47668c090c1c359d11" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b09969c7fd186049",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x561bcbe95fb3 <unknown>\n#1 0x561bcbb694a7 <unknown>\n#2 0x561bcbb9cc93 <unknown>\n#3 0x561bcbb9910c <unknown>\n#4 0x561bcbbdbac6 <unknown>\n#5 0x561bcbbd2713 <unknown>\n#6 0x561bcbba518b <unknown>\n#7 0x561bcbba5f7e <unknown>\n#8 0x561bcbe5b8d8 <unknown>\n#9 0x561bcbe5f800 <unknown>\n#10 0x561bcbe69cfc <unknown>\n#11 0x561bcbe60418 <unknown>\n#12 0x561bcbe2d42f <unknown>\n#13 0x561bcbe844e8 <unknown>\n#14 0x561bcbe846b4 <unknown>\n#15 0x561bcbe95143 <unknown>\n#16 0x7fed91494ac3 <unknown>",
+      "time" : {
+        "start" : 1698686845167,
+        "stop" : 1698686845167,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8bf67246982bc6a7b698c0d921e8a0d0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fb04e6e09f6750e0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x559103a09fb3 <unknown>\n#1 0x5591036dd4a7 <unknown>\n#2 0x559103710c93 <unknown>\n#3 0x55910370d10c <unknown>\n#4 0x55910374fac6 <unknown>\n#5 0x559103746713 <unknown>\n#6 0x55910371918b <unknown>\n#7 0x559103719f7e <unknown>\n#8 0x5591039cf8d8 <unknown>\n#9 0x5591039d3800 <unknown>\n#10 0x5591039ddcfc <unknown>\n#11 0x5591039d4418 <unknown>\n#12 0x5591039a142f <unknown>\n#13 0x5591039f84e8 <unknown>\n#14 0x5591039f86b4 <unknown>\n#15 0x559103a09143 <unknown>\n#16 0x7f4e95e94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686839480,
+        "stop" : 1698686839480,
+        "duration" : 0
+      }
+    } ]
+  },
+  "7961f6ac82043576d66dd0afb4aaaaf2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98a67dfa869c6215",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55bdaa3f9fb3 <unknown>\n#1 0x55bdaa0cd4a7 <unknown>\n#2 0x55bdaa100c93 <unknown>\n#3 0x55bdaa0fd10c <unknown>\n#4 0x55bdaa13fac6 <unknown>\n#5 0x55bdaa136713 <unknown>\n#6 0x55bdaa10918b <unknown>\n#7 0x55bdaa109f7e <unknown>\n#8 0x55bdaa3bf8d8 <unknown>\n#9 0x55bdaa3c3800 <unknown>\n#10 0x55bdaa3cdcfc <unknown>\n#11 0x55bdaa3c4418 <unknown>\n#12 0x55bdaa39142f <unknown>\n#13 0x55bdaa3e84e8 <unknown>\n#14 0x55bdaa3e86b4 <unknown>\n#15 0x55bdaa3f9143 <unknown>\n#16 0x7f4387094ac3 <unknown>",
+      "time" : {
+        "start" : 1698686851711,
+        "stop" : 1698686851711,
+        "duration" : 0
+      }
+    } ]
+  },
+  "fa30a2ad5703c76318975cbb288a8510" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "97334525580bdfcc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56431353efb3 <unknown>\n#1 0x5643132124a7 <unknown>\n#2 0x564313245c93 <unknown>\n#3 0x56431324210c <unknown>\n#4 0x564313284ac6 <unknown>\n#5 0x56431327b713 <unknown>\n#6 0x56431324e18b <unknown>\n#7 0x56431324ef7e <unknown>\n#8 0x5643135048d8 <unknown>\n#9 0x564313508800 <unknown>\n#10 0x564313512cfc <unknown>\n#11 0x564313509418 <unknown>\n#12 0x5643134d642f <unknown>\n#13 0x56431352d4e8 <unknown>\n#14 0x56431352d6b4 <unknown>\n#15 0x56431353e143 <unknown>\n#16 0x7f86c8694ac3 <unknown>",
+      "time" : {
+        "start" : 1698686838772,
+        "stop" : 1698686838772,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a8aad807254eae3251db4e20f5d3bedb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f3b2549b7d8f284f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f026be2fb3 <unknown>\n#1 0x55f0268b64a7 <unknown>\n#2 0x55f0268e9c93 <unknown>\n#3 0x55f0268e610c <unknown>\n#4 0x55f026928ac6 <unknown>\n#5 0x55f02691f713 <unknown>\n#6 0x55f0268f218b <unknown>\n#7 0x55f0268f2f7e <unknown>\n#8 0x55f026ba88d8 <unknown>\n#9 0x55f026bac800 <unknown>\n#10 0x55f026bb6cfc <unknown>\n#11 0x55f026bad418 <unknown>\n#12 0x55f026b7a42f <unknown>\n#13 0x55f026bd14e8 <unknown>\n#14 0x55f026bd16b4 <unknown>\n#15 0x55f026be2143 <unknown>\n#16 0x7fb737a94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686848154,
+        "stop" : 1698686848154,
+        "duration" : 0
+      }
+    } ]
+  },
+  "67e2b97abff730ea3db37292d08f1727" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5cdb2b5322875068",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55e93e070fb3 <unknown>\n#1 0x55e93dd444a7 <unknown>\n#2 0x55e93dd77c93 <unknown>\n#3 0x55e93dd7410c <unknown>\n#4 0x55e93ddb6ac6 <unknown>\n#5 0x55e93ddad713 <unknown>\n#6 0x55e93dd8018b <unknown>\n#7 0x55e93dd80f7e <unknown>\n#8 0x55e93e0368d8 <unknown>\n#9 0x55e93e03a800 <unknown>\n#10 0x55e93e044cfc <unknown>\n#11 0x55e93e03b418 <unknown>\n#12 0x55e93e00842f <unknown>\n#13 0x55e93e05f4e8 <unknown>\n#14 0x55e93e05f6b4 <unknown>\n#15 0x55e93e070143 <unknown>\n#16 0x7fbce6494ac3 <unknown>",
+      "time" : {
+        "start" : 1698686840900,
+        "stop" : 1698686840900,
+        "duration" : 0
+      }
+    } ]
+  },
+  "61397cb0cafcf0ab80fe2cd7ff82e255" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f43c8f8d8370d3f6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55ae763c4fb3 <unknown>\n#1 0x55ae760984a7 <unknown>\n#2 0x55ae760cbc93 <unknown>\n#3 0x55ae760c810c <unknown>\n#4 0x55ae7610aac6 <unknown>\n#5 0x55ae76101713 <unknown>\n#6 0x55ae760d418b <unknown>\n#7 0x55ae760d4f7e <unknown>\n#8 0x55ae7638a8d8 <unknown>\n#9 0x55ae7638e800 <unknown>\n#10 0x55ae76398cfc <unknown>\n#11 0x55ae7638f418 <unknown>\n#12 0x55ae7635c42f <unknown>\n#13 0x55ae763b34e8 <unknown>\n#14 0x55ae763b36b4 <unknown>\n#15 0x55ae763c4143 <unknown>\n#16 0x7f6f96e94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686841609,
+        "stop" : 1698686841609,
+        "duration" : 0
+      }
+    } ]
+  },
+  "50ff95f302c90f6f85b299038e16429f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    },
+    "items" : [ {
+      "uid" : "c8605b29fd11bf89",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56126cd5efb3 <unknown>\n#1 0x56126ca324a7 <unknown>\n#2 0x56126ca65c93 <unknown>\n#3 0x56126ca6210c <unknown>\n#4 0x56126caa4ac6 <unknown>\n#5 0x56126ca9b713 <unknown>\n#6 0x56126ca6e18b <unknown>\n#7 0x56126ca6ef7e <unknown>\n#8 0x56126cd248d8 <unknown>\n#9 0x56126cd28800 <unknown>\n#10 0x56126cd32cfc <unknown>\n#11 0x56126cd29418 <unknown>\n#12 0x56126ccf642f <unknown>\n#13 0x56126cd4d4e8 <unknown>\n#14 0x56126cd4d6b4 <unknown>\n#15 0x56126cd5e143 <unknown>\n#16 0x7fd002a94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686827355,
+        "stop" : 1698686827355,
+        "duration" : 0
+      }
+    }, {
       "uid" : "3864268b5f8d442c",
       "status" : "passed",
       "time" : {
@@ -303,16 +659,461 @@
       }
     } ]
   },
-  "ab7603033d5085e6afd0f3edb4801167" : {
+  "d10bef5c490a07dce5c94b594147c5ba" : {
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 6,
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b920d43ae49871fd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55667c617fb3 <unknown>\n#1 0x55667c2eb4a7 <unknown>\n#2 0x55667c31ec93 <unknown>\n#3 0x55667c31b10c <unknown>\n#4 0x55667c35dac6 <unknown>\n#5 0x55667c354713 <unknown>\n#6 0x55667c32718b <unknown>\n#7 0x55667c327f7e <unknown>\n#8 0x55667c5dd8d8 <unknown>\n#9 0x55667c5e1800 <unknown>\n#10 0x55667c5ebcfc <unknown>\n#11 0x55667c5e2418 <unknown>\n#12 0x55667c5af42f <unknown>\n#13 0x55667c6064e8 <unknown>\n#14 0x55667c6066b4 <unknown>\n#15 0x55667c617143 <unknown>\n#16 0x7f29ffc94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686842334,
+        "stop" : 1698686842334,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8dc958fe0001466c98339d802adbf448" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e6d8b4359ed7159",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563bc49effb3 <unknown>\n#1 0x563bc46c34a7 <unknown>\n#2 0x563bc46f6c93 <unknown>\n#3 0x563bc46f310c <unknown>\n#4 0x563bc4735ac6 <unknown>\n#5 0x563bc472c713 <unknown>\n#6 0x563bc46ff18b <unknown>\n#7 0x563bc46fff7e <unknown>\n#8 0x563bc49b58d8 <unknown>\n#9 0x563bc49b9800 <unknown>\n#10 0x563bc49c3cfc <unknown>\n#11 0x563bc49ba418 <unknown>\n#12 0x563bc498742f <unknown>\n#13 0x563bc49de4e8 <unknown>\n#14 0x563bc49de6b4 <unknown>\n#15 0x563bc49ef143 <unknown>\n#16 0x7fd302694ac3 <unknown>",
+      "time" : {
+        "start" : 1698686844461,
+        "stop" : 1698686844461,
+        "duration" : 0
+      }
+    } ]
+  },
+  "df4dfedc1c14e61cca497cda8ecefd0c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 8,
       "unknown" : 0,
       "total" : 9
     },
     "items" : [ {
+      "uid" : "8abb5638ebd492df",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563665200fb3 <unknown>\n#1 0x563664ed44a7 <unknown>\n#2 0x563664f07c93 <unknown>\n#3 0x563664f0410c <unknown>\n#4 0x563664f46ac6 <unknown>\n#5 0x563664f3d713 <unknown>\n#6 0x563664f1018b <unknown>\n#7 0x563664f10f7e <unknown>\n#8 0x5636651c68d8 <unknown>\n#9 0x5636651ca800 <unknown>\n#10 0x5636651d4cfc <unknown>\n#11 0x5636651cb418 <unknown>\n#12 0x56366519842f <unknown>\n#13 0x5636651ef4e8 <unknown>\n#14 0x5636651ef6b4 <unknown>\n#15 0x563665200143 <unknown>\n#16 0x7efdb8e94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686829375,
+        "stop" : 1698686829375,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "947f4278b1a0b6d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682455272,
+        "stop" : 1698682460086,
+        "duration" : 4814
+      }
+    }, {
+      "uid" : "3208be467509aac9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682133319,
+        "stop" : 1698682137606,
+        "duration" : 4287
+      }
+    }, {
+      "uid" : "4edca8abf91255a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698681810042,
+        "stop" : 1698681814409,
+        "duration" : 4367
+      }
+    }, {
+      "uid" : "580c08031f2c7a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698680718119,
+        "stop" : 1698680722328,
+        "duration" : 4209
+      }
+    }, {
+      "uid" : "5db7ead731c2ecfa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679307351,
+        "stop" : 1698679313227,
+        "duration" : 5876
+      }
+    }, {
+      "uid" : "2a6c23a9ab2d54c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679023758,
+        "stop" : 1698679028718,
+        "duration" : 4960
+      }
+    }, {
+      "uid" : "a3e826754b06635",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698678009799,
+        "stop" : 1698678015616,
+        "duration" : 5817
+      }
+    }, {
+      "uid" : "510eafcc2a454878",
+      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/510eafcc2a454878",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698607596319,
+        "stop" : 1698607600297,
+        "duration" : 3978
+      }
+    } ]
+  },
+  "537d3f0345e5b106903f6eb14531216e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11b222ac3a7862c7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55dbf191efb3 <unknown>\n#1 0x55dbf15f24a7 <unknown>\n#2 0x55dbf1625c93 <unknown>\n#3 0x55dbf162210c <unknown>\n#4 0x55dbf1664ac6 <unknown>\n#5 0x55dbf165b713 <unknown>\n#6 0x55dbf162e18b <unknown>\n#7 0x55dbf162ef7e <unknown>\n#8 0x55dbf18e48d8 <unknown>\n#9 0x55dbf18e8800 <unknown>\n#10 0x55dbf18f2cfc <unknown>\n#11 0x55dbf18e9418 <unknown>\n#12 0x55dbf18b642f <unknown>\n#13 0x55dbf190d4e8 <unknown>\n#14 0x55dbf190d6b4 <unknown>\n#15 0x55dbf191e143 <unknown>\n#16 0x7ff8abc94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686834499,
+        "stop" : 1698686834499,
+        "duration" : 0
+      }
+    } ]
+  },
+  "70b14a058b330c51f447db242b147a85" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4e569ffa077c6f2e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55ea41a3afb3 <unknown>\n#1 0x55ea4170e4a7 <unknown>\n#2 0x55ea41741c93 <unknown>\n#3 0x55ea4173e10c <unknown>\n#4 0x55ea41780ac6 <unknown>\n#5 0x55ea41777713 <unknown>\n#6 0x55ea4174a18b <unknown>\n#7 0x55ea4174af7e <unknown>\n#8 0x55ea41a008d8 <unknown>\n#9 0x55ea41a04800 <unknown>\n#10 0x55ea41a0ecfc <unknown>\n#11 0x55ea41a05418 <unknown>\n#12 0x55ea419d242f <unknown>\n#13 0x55ea41a294e8 <unknown>\n#14 0x55ea41a296b4 <unknown>\n#15 0x55ea41a3a143 <unknown>\n#16 0x7f0e5ca94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686836641,
+        "stop" : 1698686836641,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9a38ae1cbbf5c7f09f83fc4b6c40840f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e083d4f626159717",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5618ee8defb3 <unknown>\n#1 0x5618ee5b24a7 <unknown>\n#2 0x5618ee5e5c93 <unknown>\n#3 0x5618ee5e210c <unknown>\n#4 0x5618ee624ac6 <unknown>\n#5 0x5618ee61b713 <unknown>\n#6 0x5618ee5ee18b <unknown>\n#7 0x5618ee5eef7e <unknown>\n#8 0x5618ee8a48d8 <unknown>\n#9 0x5618ee8a8800 <unknown>\n#10 0x5618ee8b2cfc <unknown>\n#11 0x5618ee8a9418 <unknown>\n#12 0x5618ee87642f <unknown>\n#13 0x5618ee8cd4e8 <unknown>\n#14 0x5618ee8cd6b4 <unknown>\n#15 0x5618ee8de143 <unknown>\n#16 0x7f3a84c94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686843044,
+        "stop" : 1698686843044,
+        "duration" : 0
+      }
+    } ]
+  },
+  "0f649912d7eb196fab614b6d395a97ce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d7a1efa9f7bc9b82",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5636fa0b8fb3 <unknown>\n#1 0x5636f9d8c4a7 <unknown>\n#2 0x5636f9dbfc93 <unknown>\n#3 0x5636f9dbc10c <unknown>\n#4 0x5636f9dfeac6 <unknown>\n#5 0x5636f9df5713 <unknown>\n#6 0x5636f9dc818b <unknown>\n#7 0x5636f9dc8f7e <unknown>\n#8 0x5636fa07e8d8 <unknown>\n#9 0x5636fa082800 <unknown>\n#10 0x5636fa08ccfc <unknown>\n#11 0x5636fa083418 <unknown>\n#12 0x5636fa05042f <unknown>\n#13 0x5636fa0a74e8 <unknown>\n#14 0x5636fa0a76b4 <unknown>\n#15 0x5636fa0b8143 <unknown>\n#16 0x7f680ac94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686846585,
+        "stop" : 1698686846585,
+        "duration" : 0
+      }
+    } ]
+  },
+  "f333b79c365f419917922190a7bdc1da" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    },
+    "items" : [ {
+      "uid" : "33e346e4db1ca7cf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d677afcfb3 <unknown>\n#1 0x55d6777d04a7 <unknown>\n#2 0x55d677803c93 <unknown>\n#3 0x55d67780010c <unknown>\n#4 0x55d677842ac6 <unknown>\n#5 0x55d677839713 <unknown>\n#6 0x55d67780c18b <unknown>\n#7 0x55d67780cf7e <unknown>\n#8 0x55d677ac28d8 <unknown>\n#9 0x55d677ac6800 <unknown>\n#10 0x55d677ad0cfc <unknown>\n#11 0x55d677ac7418 <unknown>\n#12 0x55d677a9442f <unknown>\n#13 0x55d677aeb4e8 <unknown>\n#14 0x55d677aeb6b4 <unknown>\n#15 0x55d677afc143 <unknown>\n#16 0x7f44a5294ac3 <unknown>",
+      "time" : {
+        "start" : 1698686830804,
+        "stop" : 1698686830804,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "968f2740ec6da577",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682467898,
+        "stop" : 1698682470745,
+        "duration" : 2847
+      }
+    }, {
+      "uid" : "8b51621d6293f712",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682145108,
+        "stop" : 1698682147476,
+        "duration" : 2368
+      }
+    }, {
+      "uid" : "8233a5f5f7af3ab1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698681822693,
+        "stop" : 1698681825242,
+        "duration" : 2549
+      }
+    }, {
+      "uid" : "3380f7cb11a249ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698680729527,
+        "stop" : 1698680732036,
+        "duration" : 2509
+      }
+    }, {
+      "uid" : "6c529ba3b480e21d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679322269,
+        "stop" : 1698679325257,
+        "duration" : 2988
+      }
+    }, {
+      "uid" : "3a7ae394ba838bb9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679037259,
+        "stop" : 1698679040005,
+        "duration" : 2746
+      }
+    }, {
+      "uid" : "97ddcb910ec608b9",
+      "status" : "passed",
+      "statusDetails" : "XPASS",
+      "time" : {
+        "start" : 1698678025127,
+        "stop" : 1698678028165,
+        "duration" : 3038
+      }
+    }, {
+      "uid" : "e98c2d74c8f01647",
+      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/e98c2d74c8f01647",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698607607431,
+        "stop" : 1698607609778,
+        "duration" : 2347
+      }
+    } ]
+  },
+  "80a7c3bfde90fe555afc4af744fb3857" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "63105b58adb480c3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558aa6025fb3 <unknown>\n#1 0x558aa5cf94a7 <unknown>\n#2 0x558aa5d2cc93 <unknown>\n#3 0x558aa5d2910c <unknown>\n#4 0x558aa5d6bac6 <unknown>\n#5 0x558aa5d62713 <unknown>\n#6 0x558aa5d3518b <unknown>\n#7 0x558aa5d35f7e <unknown>\n#8 0x558aa5feb8d8 <unknown>\n#9 0x558aa5fef800 <unknown>\n#10 0x558aa5ff9cfc <unknown>\n#11 0x558aa5ff0418 <unknown>\n#12 0x558aa5fbd42f <unknown>\n#13 0x558aa60144e8 <unknown>\n#14 0x558aa60146b4 <unknown>\n#15 0x558aa6025143 <unknown>\n#16 0x7f15eda94ac3 <unknown>",
+      "time" : {
+        "start" : 1698686835915,
+        "stop" : 1698686835915,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4a0f288f15ee4e9313d6591845657518" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "14683187e1be2bb3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56143c627fb3 <unknown>\n#1 0x56143c2fb4a7 <unknown>\n#2 0x56143c32ec93 <unknown>\n#3 0x56143c32b10c <unknown>\n#4 0x56143c36dac6 <unknown>\n#5 0x56143c364713 <unknown>\n#6 0x56143c33718b <unknown>\n#7 0x56143c337f7e <unknown>\n#8 0x56143c5ed8d8 <unknown>\n#9 0x56143c5f1800 <unknown>\n#10 0x56143c5fbcfc <unknown>\n#11 0x56143c5f2418 <unknown>\n#12 0x56143c5bf42f <unknown>\n#13 0x56143c6164e8 <unknown>\n#14 0x56143c6166b4 <unknown>\n#15 0x56143c627143 <unknown>\n#16 0x7f2445094ac3 <unknown>",
+      "time" : {
+        "start" : 1698686837352,
+        "stop" : 1698686837352,
+        "duration" : 0
+      }
+    } ]
+  },
+  "54040ce945b4c00afc7b3860eff5700d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 9
+    },
+    "items" : [ {
+      "uid" : "92ccfa425de56d62",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x559aa7f2ffb3 <unknown>\n#1 0x559aa7c034a7 <unknown>\n#2 0x559aa7c36c93 <unknown>\n#3 0x559aa7c3310c <unknown>\n#4 0x559aa7c75ac6 <unknown>\n#5 0x559aa7c6c713 <unknown>\n#6 0x559aa7c3f18b <unknown>\n#7 0x559aa7c3ff7e <unknown>\n#8 0x559aa7ef58d8 <unknown>\n#9 0x559aa7ef9800 <unknown>\n#10 0x559aa7f03cfc <unknown>\n#11 0x559aa7efa418 <unknown>\n#12 0x559aa7ec742f <unknown>\n#13 0x559aa7f1e4e8 <unknown>\n#14 0x559aa7f1e6b4 <unknown>\n#15 0x559aa7f2f143 <unknown>\n#16 0x7f1cf7694ac3 <unknown>",
+      "time" : {
+        "start" : 1698686831511,
+        "stop" : 1698686831511,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9cdc5e5a2287fd1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682471686,
+        "stop" : 1698682474218,
+        "duration" : 2532
+      }
+    }, {
+      "uid" : "54fda29dd029b2cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698682148403,
+        "stop" : 1698682150772,
+        "duration" : 2369
+      }
+    }, {
+      "uid" : "23c5de487830f334",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698681826169,
+        "stop" : 1698681828566,
+        "duration" : 2397
+      }
+    }, {
+      "uid" : "4fec3a0a77bb9f72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698680732959,
+        "stop" : 1698680735459,
+        "duration" : 2500
+      }
+    }, {
+      "uid" : "11fe9ed1a0340fb2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679326234,
+        "stop" : 1698679329369,
+        "duration" : 3135
+      }
+    }, {
+      "uid" : "23c174ee6bcfb356",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698679040983,
+        "stop" : 1698679043826,
+        "duration" : 2843
+      }
+    }, {
+      "uid" : "576b390a270d6252",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698678029144,
+        "stop" : 1698678032208,
+        "duration" : 3064
+      }
+    }, {
+      "uid" : "67d5698395457b1",
+      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/67d5698395457b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1698607610684,
+        "stop" : 1698607613101,
+        "duration" : 2417
+      }
+    } ]
+  },
+  "f000a317ef803ebdfa6266afe513b050" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9ed7f7af01664721",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560c77972fb3 <unknown>\n#1 0x560c776464a7 <unknown>\n#2 0x560c77679c93 <unknown>\n#3 0x560c7767610c <unknown>\n#4 0x560c776b8ac6 <unknown>\n#5 0x560c776af713 <unknown>\n#6 0x560c7768218b <unknown>\n#7 0x560c77682f7e <unknown>\n#8 0x560c779388d8 <unknown>\n#9 0x560c7793c800 <unknown>\n#10 0x560c77946cfc <unknown>\n#11 0x560c7793d418 <unknown>\n#12 0x560c7790a42f <unknown>\n#13 0x560c779614e8 <unknown>\n#14 0x560c779616b4 <unknown>\n#15 0x560c77972143 <unknown>\n#16 0x7f1dcf294ac3 <unknown>",
+      "time" : {
+        "start" : 1698686843751,
+        "stop" : 1698686843751,
+        "duration" : 0
+      }
+    } ]
+  },
+  "ab7603033d5085e6afd0f3edb4801167" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 2,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 10
+    },
+    "items" : [ {
+      "uid" : "8d741f9ae1c6b275",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55daeadfcfb3 <unknown>\n#1 0x55daeaad04a7 <unknown>\n#2 0x55daeab03c93 <unknown>\n#3 0x55daeab0010c <unknown>\n#4 0x55daeab42ac6 <unknown>\n#5 0x55daeab39713 <unknown>\n#6 0x55daeab0c18b <unknown>\n#7 0x55daeab0cf7e <unknown>\n#8 0x55daeadc28d8 <unknown>\n#9 0x55daeadc6800 <unknown>\n#10 0x55daeadd0cfc <unknown>\n#11 0x55daeadc7418 <unknown>\n#12 0x55daead9442f <unknown>\n#13 0x55daeadeb4e8 <unknown>\n#14 0x55daeadeb6b4 <unknown>\n#15 0x55daeadfc143 <unknown>\n#16 0x7fc616494ac3 <unknown>",
+      "time" : {
+        "start" : 1698686828669,
+        "stop" : 1698686828669,
+        "duration" : 0
+      }
+    }, {
       "uid" : "441f1cc2a702dcd6",
       "status" : "passed",
       "time" : {
@@ -390,169 +1191,45 @@
       }
     } ]
   },
-  "f333b79c365f419917922190a7bdc1da" : {
+  "972c1922185b43fe877d0831c94f3362" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "968f2740ec6da577",
-      "status" : "passed",
+      "uid" : "729009e68e177cf2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x559f78308fb3 <unknown>\n#1 0x559f77fdc4a7 <unknown>\n#2 0x559f7800fc93 <unknown>\n#3 0x559f7800c10c <unknown>\n#4 0x559f7804eac6 <unknown>\n#5 0x559f78045713 <unknown>\n#6 0x559f7801818b <unknown>\n#7 0x559f78018f7e <unknown>\n#8 0x559f782ce8d8 <unknown>\n#9 0x559f782d2800 <unknown>\n#10 0x559f782dccfc <unknown>\n#11 0x559f782d3418 <unknown>\n#12 0x559f782a042f <unknown>\n#13 0x559f782f74e8 <unknown>\n#14 0x559f782f76b4 <unknown>\n#15 0x559f78308143 <unknown>\n#16 0x7f2186a94ac3 <unknown>",
       "time" : {
-        "start" : 1698682467898,
-        "stop" : 1698682470745,
-        "duration" : 2847
-      }
-    }, {
-      "uid" : "8b51621d6293f712",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682145108,
-        "stop" : 1698682147476,
-        "duration" : 2368
-      }
-    }, {
-      "uid" : "8233a5f5f7af3ab1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698681822693,
-        "stop" : 1698681825242,
-        "duration" : 2549
-      }
-    }, {
-      "uid" : "3380f7cb11a249ed",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698680729527,
-        "stop" : 1698680732036,
-        "duration" : 2509
-      }
-    }, {
-      "uid" : "6c529ba3b480e21d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679322269,
-        "stop" : 1698679325257,
-        "duration" : 2988
-      }
-    }, {
-      "uid" : "3a7ae394ba838bb9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679037259,
-        "stop" : 1698679040005,
-        "duration" : 2746
-      }
-    }, {
-      "uid" : "97ddcb910ec608b9",
-      "status" : "passed",
-      "statusDetails" : "XPASS",
-      "time" : {
-        "start" : 1698678025127,
-        "stop" : 1698678028165,
-        "duration" : 3038
-      }
-    }, {
-      "uid" : "e98c2d74c8f01647",
-      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/e98c2d74c8f01647",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698607607431,
-        "stop" : 1698607609778,
-        "duration" : 2347
-      }
-    } ]
-  },
-  "df4dfedc1c14e61cca497cda8ecefd0c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
-      "unknown" : 0,
-      "total" : 8
-    },
-    "items" : [ {
-      "uid" : "947f4278b1a0b6d2",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682455272,
-        "stop" : 1698682460086,
-        "duration" : 4814
-      }
-    }, {
-      "uid" : "3208be467509aac9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682133319,
-        "stop" : 1698682137606,
-        "duration" : 4287
-      }
-    }, {
-      "uid" : "4edca8abf91255a7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698681810042,
-        "stop" : 1698681814409,
-        "duration" : 4367
-      }
-    }, {
-      "uid" : "580c08031f2c7a8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698680718119,
-        "stop" : 1698680722328,
-        "duration" : 4209
-      }
-    }, {
-      "uid" : "5db7ead731c2ecfa",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679307351,
-        "stop" : 1698679313227,
-        "duration" : 5876
-      }
-    }, {
-      "uid" : "2a6c23a9ab2d54c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679023758,
-        "stop" : 1698679028718,
-        "duration" : 4960
-      }
-    }, {
-      "uid" : "a3e826754b06635",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698678009799,
-        "stop" : 1698678015616,
-        "duration" : 5817
-      }
-    }, {
-      "uid" : "510eafcc2a454878",
-      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/510eafcc2a454878",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698607596319,
-        "stop" : 1698607600297,
-        "duration" : 3978
+        "start" : 1698686853489,
+        "stop" : 1698686853489,
+        "duration" : 0
       }
     } ]
   },
   "4d47f0d90d5fadf72c8c5825d49f78bf" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "197a4e06d9a7fbb0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560edfc33fb3 <unknown>\n#1 0x560edf9074a7 <unknown>\n#2 0x560edf93ac93 <unknown>\n#3 0x560edf93710c <unknown>\n#4 0x560edf979ac6 <unknown>\n#5 0x560edf970713 <unknown>\n#6 0x560edf94318b <unknown>\n#7 0x560edf943f7e <unknown>\n#8 0x560edfbf98d8 <unknown>\n#9 0x560edfbfd800 <unknown>\n#10 0x560edfc07cfc <unknown>\n#11 0x560edfbfe418 <unknown>\n#12 0x560edfbcb42f <unknown>\n#13 0x560edfc224e8 <unknown>\n#14 0x560edfc226b4 <unknown>\n#15 0x560edfc33143 <unknown>\n#16 0x7fd0e5494ac3 <unknown>",
+      "time" : {
+        "start" : 1698686833081,
+        "stop" : 1698686833081,
+        "duration" : 0
+      }
+    }, {
       "uid" : "342b61a1ff891801",
       "status" : "passed",
       "time" : {
@@ -620,79 +1297,23 @@
       }
     } ]
   },
-  "f331ccbe32f1b5648ac080c27e917edd" : {
+  "f16ffe127da54c87f8f31c3d1ac3792c" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "221d37fefceb6573",
-      "status" : "passed",
+      "uid" : "bc221174ff934ee5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563b113fdfb3 <unknown>\n#1 0x563b110d14a7 <unknown>\n#2 0x563b11104c93 <unknown>\n#3 0x563b1110110c <unknown>\n#4 0x563b11143ac6 <unknown>\n#5 0x563b1113a713 <unknown>\n#6 0x563b1110d18b <unknown>\n#7 0x563b1110df7e <unknown>\n#8 0x563b113c38d8 <unknown>\n#9 0x563b113c7800 <unknown>\n#10 0x563b113d1cfc <unknown>\n#11 0x563b113c8418 <unknown>\n#12 0x563b1139542f <unknown>\n#13 0x563b113ec4e8 <unknown>\n#14 0x563b113ec6b4 <unknown>\n#15 0x563b113fd143 <unknown>\n#16 0x7fa640894ac3 <unknown>",
       "time" : {
-        "start" : 1698682489346,
-        "stop" : 1698682493108,
-        "duration" : 3762
-      }
-    }, {
-      "uid" : "6d378dc1d5165bee",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698682165192,
-        "stop" : 1698682168234,
-        "duration" : 3042
-      }
-    }, {
-      "uid" : "b9afc97ab782a7da",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698681842737,
-        "stop" : 1698681845926,
-        "duration" : 3189
-      }
-    }, {
-      "uid" : "5d714071f7c77aa4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698680749091,
-        "stop" : 1698680752094,
-        "duration" : 3003
-      }
-    }, {
-      "uid" : "b1f466d394a7c29c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679346666,
-        "stop" : 1698679350652,
-        "duration" : 3986
-      }
-    }, {
-      "uid" : "783e38e21255534f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698679059810,
-        "stop" : 1698679063353,
-        "duration" : 3543
-      }
-    }, {
-      "uid" : "f6eecfee8168b5d4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698678049814,
-        "stop" : 1698678053610,
-        "duration" : 3796
-      }
-    }, {
-      "uid" : "2852e90a61e7cf77",
-      "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/2852e90a61e7cf77",
-      "status" : "passed",
-      "time" : {
-        "start" : 1698607626697,
-        "stop" : 1698607629772,
-        "duration" : 3075
+        "start" : 1698686840189,
+        "stop" : 1698686840189,
+        "duration" : 0
       }
     } ]
   }
