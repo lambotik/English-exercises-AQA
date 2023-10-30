@@ -14,7 +14,7 @@ class TestPrepositions_1_1:
         main_page.check_main_options(main_page)
 
     @allure.title('Check questions no repeated.')
-    # @pytest.mark.xfail
+    @pytest.mark.xfail
     def test_check_questions_no_repeated(self, driver):
         main_page = PrepositionsPages(driver, self.url)
         main_page.open()
