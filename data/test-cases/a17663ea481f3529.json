@@ -1,0 +1,126 @@
+{
+  "uid" : "a17663ea481f3529",
+  "name" : "Check args is not presence.",
+  "fullName" : "tests.test_cards.TestPrepositions_1_12#test_args_is_not_presence",
+  "historyId" : "6f2c388fae7d2dbbc2521e0e4205590d",
+  "time" : {
+    "start" : 1698687503176,
+    "stop" : 1698687503176,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d4e867afb3 <unknown>\n#1 0x55d4e834e4a7 <unknown>\n#2 0x55d4e8381c93 <unknown>\n#3 0x55d4e837e10c <unknown>\n#4 0x55d4e83c0ac6 <unknown>\n#5 0x55d4e83b7713 <unknown>\n#6 0x55d4e838a18b <unknown>\n#7 0x55d4e838af7e <unknown>\n#8 0x55d4e86408d8 <unknown>\n#9 0x55d4e8644800 <unknown>\n#10 0x55d4e864ecfc <unknown>\n#11 0x55d4e8645418 <unknown>\n#12 0x55d4e861242f <unknown>\n#13 0x55d4e86694e8 <unknown>\n#14 0x55d4e86696b4 <unknown>\n#15 0x55d4e867a143 <unknown>\n#16 0x7f6d6d294ac3 <unknown>",
+  "statusTrace" : "@pytest.fixture()\n    def driver():\n        options = Options()\n        # options.add_argument('--headless')\n>       driver = webdriver.Chrome(options=options)\n\ntests/conftest.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py:45: in __init__\n    super().__init__(\n/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py:56: in __init__\n    super().__init__(\n/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py:205: in __init__\n    self.start_session(capabilities)\n/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py:289: in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py:344: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f73929407c0>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"session not created\",\"message\":\"session not created: Chrome failed to sta...\\\\n#14 0x55d4e86696b4 \\\\u003Cunknown>\\\\n#15 0x55d4e867a143 \\\\u003Cunknown>\\\\n#16 0x7f6d6d294ac3 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\nE         (session not created: DevToolsActivePort file doesn't exist)\nE         (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nE       Stacktrace:\nE       #0 0x55d4e867afb3 <unknown>\nE       #1 0x55d4e834e4a7 <unknown>\nE       #2 0x55d4e8381c93 <unknown>\nE       #3 0x55d4e837e10c <unknown>\nE       #4 0x55d4e83c0ac6 <unknown>\nE       #5 0x55d4e83b7713 <unknown>\nE       #6 0x55d4e838a18b <unknown>\nE       #7 0x55d4e838af7e <unknown>\nE       #8 0x55d4e86408d8 <unknown>\nE       #9 0x55d4e8644800 <unknown>\nE       #10 0x55d4e864ecfc <unknown>\nE       #11 0x55d4e8645418 <unknown>\nE       #12 0x55d4e861242f <unknown>\nE       #13 0x55d4e86694e8 <unknown>\nE       #14 0x55d4e86696b4 <unknown>\nE       #15 0x55d4e867a143 <unknown>\nE       #16 0x7f6d6d294ac3 <unknown>\n\n/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py:229: SessionNotCreatedException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1698687503176,
+      "stop" : 1698687503844,
+      "duration" : 668
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d4e867afb3 <unknown>\n#1 0x55d4e834e4a7 <unknown>\n#2 0x55d4e8381c93 <unknown>\n#3 0x55d4e837e10c <unknown>\n#4 0x55d4e83c0ac6 <unknown>\n#5 0x55d4e83b7713 <unknown>\n#6 0x55d4e838a18b <unknown>\n#7 0x55d4e838af7e <unknown>\n#8 0x55d4e86408d8 <unknown>\n#9 0x55d4e8644800 <unknown>\n#10 0x55d4e864ecfc <unknown>\n#11 0x55d4e8645418 <unknown>\n#12 0x55d4e861242f <unknown>\n#13 0x55d4e86694e8 <unknown>\n#14 0x55d4e86696b4 <unknown>\n#15 0x55d4e867a143 <unknown>\n#16 0x7f6d6d294ac3 <unknown>\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/_pytest/fixtures.py\", line 1123, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/_pytest/fixtures.py\", line 895, in call_fixture_func\n    fixture_result = next(generator)\n  File \"/home/runner/work/English-exercises-AQA/English-exercises-AQA/tests/conftest.py\", line 14, in driver\n    driver = webdriver.Chrome(options=options)\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py\", line 45, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py\", line 56, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py\", line 205, in __init__\n    self.start_session(capabilities)\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py\", line 289, in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py\", line 344, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698687480565,
+      "stop" : 1698687480637,
+      "duration" : 72
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Prepositions with verbs (p3)."
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_cards"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPrepositions_1_12"
+  }, {
+    "name" : "host",
+    "value" : "fv-az592-825"
+  }, {
+    "name" : "thread",
+    "value" : "1949-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "942864cfbefcd967",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5646567e8fb3 <unknown>\n#1 0x5646564bc4a7 <unknown>\n#2 0x5646564efc93 <unknown>\n#3 0x5646564ec10c <unknown>\n#4 0x56465652eac6 <unknown>\n#5 0x564656525713 <unknown>\n#6 0x5646564f818b <unknown>\n#7 0x5646564f8f7e <unknown>\n#8 0x5646567ae8d8 <unknown>\n#9 0x5646567b2800 <unknown>\n#10 0x5646567bccfc <unknown>\n#11 0x5646567b3418 <unknown>\n#12 0x56465678042f <unknown>\n#13 0x5646567d74e8 <unknown>\n#14 0x5646567d76b4 <unknown>\n#15 0x5646567e8143 <unknown>\n#16 0x7fbd47494ac3 <unknown>",
+        "time" : {
+          "start" : 1698687110676,
+          "stop" : 1698687110677,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f09718ce166aa11",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55c032674fb3 <unknown>\n#1 0x55c0323484a7 <unknown>\n#2 0x55c03237bc93 <unknown>\n#3 0x55c03237810c <unknown>\n#4 0x55c0323baac6 <unknown>\n#5 0x55c0323b1713 <unknown>\n#6 0x55c03238418b <unknown>\n#7 0x55c032384f7e <unknown>\n#8 0x55c03263a8d8 <unknown>\n#9 0x55c03263e800 <unknown>\n#10 0x55c032648cfc <unknown>\n#11 0x55c03263f418 <unknown>\n#12 0x55c03260c42f <unknown>\n#13 0x55c0326634e8 <unknown>\n#14 0x55c0326636b4 <unknown>\n#15 0x55c032674143 <unknown>\n#16 0x7f563ac94ac3 <unknown>",
+        "time" : {
+          "start" : 1698686848879,
+          "stop" : 1698686848879,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a17663ea481f3529.json",
+  "parameterValues" : [ ]
+}
