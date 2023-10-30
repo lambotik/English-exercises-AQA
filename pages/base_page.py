@@ -86,6 +86,13 @@ class BasePage:
         with allure.step(f'Check value of selected button: {result}'):
             return result
 
+    @allure.step('check_selected_radio_button')
+    def get_entered_value(self):
+        """This method returned entered value from input place"""
+        result = self.driver.execute_script(f'return(document.querySelector("#answer_text_field").value)')
+        with allure.step(f'Check value of selected button: {result}'):
+            return result
+
     """"Данный метод убирает рекламный банер"""
 
     @allure.step('Remove fixedban')
