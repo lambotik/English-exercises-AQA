@@ -26,7 +26,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run tests
         run: |
-          pytest -s -v --alluredir=allure-results 
+          pytest -s -vv --alluredir=allure-results 
 
       - name: Add allure information
         working-directory: allure-results
