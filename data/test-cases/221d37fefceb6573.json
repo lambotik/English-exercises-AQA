@@ -1,22 +1,22 @@
 {
-  "uid" : "338ddfa1a829a2f4",
-  "name" : "Check questions no repeated",
-  "fullName" : "tests.test_cards.TestPrepositions_1_4#test_check_questions_no_repeated",
-  "historyId" : "4d47f0d90d5fadf72c8c5825d49f78bf",
+  "uid" : "221d37fefceb6573",
+  "name" : "Check args is not presence",
+  "fullName" : "tests.test_cards.TestPrepositions_1_4#test_args_is_not_presence",
+  "historyId" : "f331ccbe32f1b5648ac080c27e917edd",
   "time" : {
-    "start" : 1698682161005,
-    "stop" : 1698682164263,
-    "duration" : 3258
+    "start" : 1698682489346,
+    "stop" : 1698682493108,
+    "duration" : 3762
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver",
+    "name" : "_session_faker",
     "time" : {
-      "start" : 1698682160194,
-      "stop" : 1698682161004,
-      "duration" : 810
+      "start" : 1698682416802,
+      "stop" : 1698682416875,
+      "duration" : 73
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "_session_faker",
+    "name" : "driver",
     "time" : {
-      "start" : 1698682112656,
-      "stop" : 1698682112727,
-      "duration" : 71
+      "start" : 1698682488534,
+      "stop" : 1698682489346,
+      "duration" : 812
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open page: https://english.areso.pro/lesson.html?lesson=prepositions_to_at_in_into",
       "time" : {
-        "start" : 1698682161005,
-        "stop" : 1698682162420,
-        "duration" : 1415
+        "start" : 1698682489346,
+        "stop" : 1698682491237,
+        "duration" : 1891
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnTotal\"]')",
       "time" : {
-        "start" : 1698682162421,
-        "stop" : 1698682162433,
-        "duration" : 12
+        "start" : 1698682491237,
+        "stop" : 1698682491250,
+        "duration" : 13
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,8 +77,8 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
       "time" : {
-        "start" : 1698682162446,
-        "stop" : 1698682162456,
+        "start" : 1698682491263,
+        "stop" : 1698682491273,
         "duration" : 10
       },
       "status" : "passed",
@@ -92,8 +92,8 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
       "time" : {
-        "start" : 1698682162463,
-        "stop" : 1698682162473,
+        "start" : 1698682491281,
+        "stop" : 1698682491291,
         "duration" : 10
       },
       "status" : "passed",
@@ -107,25 +107,25 @@
     }, {
       "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
       "time" : {
-        "start" : 1698682162480,
-        "stop" : 1698682162527,
-        "duration" : 47
+        "start" : 1698682491299,
+        "stop" : 1698682491349,
+        "duration" : 50
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is clickable",
         "time" : {
-          "start" : 1698682162501,
-          "stop" : 1698682162527,
-          "duration" : 26
+          "start" : 1698682491322,
+          "stop" : 1698682491349,
+          "duration" : 27
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
           "time" : {
-            "start" : 1698682162501,
-            "stop" : 1698682162527,
-            "duration" : 26
+            "start" : 1698682491322,
+            "stop" : 1698682491349,
+            "duration" : 27
           },
           "status" : "passed",
           "steps" : [ ],
@@ -155,9 +155,9 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
       "time" : {
-        "start" : 1698682162564,
-        "stop" : 1698682162571,
-        "duration" : 7
+        "start" : 1698682491386,
+        "stop" : 1698682491395,
+        "duration" : 9
       },
       "status" : "passed",
       "steps" : [ ],
@@ -170,8 +170,8 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
       "time" : {
-        "start" : 1698682162578,
-        "stop" : 1698682162585,
+        "start" : 1698682491402,
+        "stop" : 1698682491409,
         "duration" : 7
       },
       "status" : "passed",
@@ -185,24 +185,24 @@
     }, {
       "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
       "time" : {
-        "start" : 1698682162591,
-        "stop" : 1698682162626,
-        "duration" : 35
+        "start" : 1698682491416,
+        "stop" : 1698682491452,
+        "duration" : 36
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is clickable",
         "time" : {
-          "start" : 1698682162605,
-          "stop" : 1698682162626,
+          "start" : 1698682491431,
+          "stop" : 1698682491452,
           "duration" : 21
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
           "time" : {
-            "start" : 1698682162605,
-            "stop" : 1698682162626,
+            "start" : 1698682491431,
+            "stop" : 1698682491452,
             "duration" : 21
           },
           "status" : "passed",
@@ -233,9 +233,9 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
       "time" : {
-        "start" : 1698682162650,
-        "stop" : 1698682162659,
-        "duration" : 9
+        "start" : 1698682491477,
+        "stop" : 1698682491485,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ ],
@@ -248,8 +248,242 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
       "time" : {
-        "start" : 1698682162667,
-        "stop" : 1698682162673,
+        "start" : 1698682491492,
+        "stop" : 1698682491499,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682491508,
+        "stop" : 1698682491542,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682491522,
+          "stop" : 1698682491542,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682491522,
+            "stop" : 1698682491542,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682491569,
+        "stop" : 1698682491589,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682491596,
+        "stop" : 1698682491603,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682491610,
+        "stop" : 1698682491651,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682491624,
+          "stop" : 1698682491651,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682491624,
+            "stop" : 1698682491651,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682491685,
+        "stop" : 1698682491695,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682491703,
+        "stop" : 1698682491710,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682491717,
+        "stop" : 1698682491752,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682491731,
+          "stop" : 1698682491752,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682491731,
+            "stop" : 1698682491752,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682491782,
+        "stop" : 1698682491790,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682491797,
+        "stop" : 1698682491803,
         "duration" : 6
       },
       "status" : "passed",
@@ -263,24 +497,180 @@
     }, {
       "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
       "time" : {
-        "start" : 1698682162680,
-        "stop" : 1698682162727,
-        "duration" : 47
+        "start" : 1698682491810,
+        "stop" : 1698682491847,
+        "duration" : 37
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is clickable",
         "time" : {
-          "start" : 1698682162707,
-          "stop" : 1698682162727,
+          "start" : 1698682491825,
+          "stop" : 1698682491847,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682491825,
+            "stop" : 1698682491847,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682491876,
+        "stop" : 1698682491883,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682491891,
+        "stop" : 1698682491898,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682491905,
+        "stop" : 1698682491941,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682491919,
+          "stop" : 1698682491941,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682491919,
+            "stop" : 1698682491941,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682491970,
+        "stop" : 1698682491979,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682491986,
+        "stop" : 1698682491992,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682491999,
+        "stop" : 1698682492034,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492014,
+          "stop" : 1698682492034,
           "duration" : 20
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
           "time" : {
-            "start" : 1698682162708,
-            "stop" : 1698682162727,
+            "start" : 1698682492014,
+            "stop" : 1698682492033,
             "duration" : 19
           },
           "status" : "passed",
@@ -311,9 +701,9 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
       "time" : {
-        "start" : 1698682162764,
-        "stop" : 1698682162771,
-        "duration" : 7
+        "start" : 1698682492061,
+        "stop" : 1698682492069,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ ],
@@ -326,8 +716,8 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
       "time" : {
-        "start" : 1698682162778,
-        "stop" : 1698682162784,
+        "start" : 1698682492077,
+        "stop" : 1698682492083,
         "duration" : 6
       },
       "status" : "passed",
@@ -341,103 +731,25 @@
     }, {
       "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
       "time" : {
-        "start" : 1698682162791,
-        "stop" : 1698682162827,
+        "start" : 1698682492091,
+        "stop" : 1698682492127,
         "duration" : 36
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is clickable",
         "time" : {
-          "start" : 1698682162804,
-          "stop" : 1698682162827,
-          "duration" : 23
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682162805,
-            "stop" : 1698682162827,
-            "duration" : 22
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682162855,
-        "stop" : 1698682162862,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682162869,
-        "stop" : 1698682162875,
-        "duration" : 6
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682162882,
-        "stop" : 1698682162917,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682162896,
-          "stop" : 1698682162917,
+          "start" : 1698682492106,
+          "stop" : 1698682492127,
           "duration" : 21
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
           "time" : {
-            "start" : 1698682162896,
-            "stop" : 1698682162917,
-            "duration" : 21
+            "start" : 1698682492106,
+            "stop" : 1698682492126,
+            "duration" : 20
           },
           "status" : "passed",
           "steps" : [ ],
@@ -467,86 +779,8 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
       "time" : {
-        "start" : 1698682162944,
-        "stop" : 1698682162951,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682162958,
-        "stop" : 1698682162965,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682162972,
-        "stop" : 1698682163007,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682162985,
-          "stop" : 1698682163007,
-          "duration" : 22
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682162985,
-            "stop" : 1698682163007,
-            "duration" : 22
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163032,
-        "stop" : 1698682163040,
+        "start" : 1698682492154,
+        "stop" : 1698682492162,
         "duration" : 8
       },
       "status" : "passed",
@@ -560,8 +794,8 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
       "time" : {
-        "start" : 1698682163047,
-        "stop" : 1698682163053,
+        "start" : 1698682492171,
+        "stop" : 1698682492177,
         "duration" : 6
       },
       "status" : "passed",
@@ -575,883 +809,25 @@
     }, {
       "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
       "time" : {
-        "start" : 1698682163061,
-        "stop" : 1698682163096,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163076,
-          "stop" : 1698682163096,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163076,
-            "stop" : 1698682163096,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163123,
-        "stop" : 1698682163130,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163137,
-        "stop" : 1698682163143,
-        "duration" : 6
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163150,
-        "stop" : 1698682163184,
-        "duration" : 34
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163164,
-          "stop" : 1698682163184,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163164,
-            "stop" : 1698682163184,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163212,
-        "stop" : 1698682163219,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163228,
-        "stop" : 1698682163235,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163242,
-        "stop" : 1698682163277,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163256,
-          "stop" : 1698682163277,
-          "duration" : 21
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163256,
-            "stop" : 1698682163277,
-            "duration" : 21
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163308,
-        "stop" : 1698682163317,
-        "duration" : 9
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163327,
-        "stop" : 1698682163333,
-        "duration" : 6
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163341,
-        "stop" : 1698682163376,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163356,
-          "stop" : 1698682163376,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163356,
-            "stop" : 1698682163376,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163402,
-        "stop" : 1698682163410,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163418,
-        "stop" : 1698682163425,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163436,
-        "stop" : 1698682163472,
-        "duration" : 36
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163451,
-          "stop" : 1698682163472,
-          "duration" : 21
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163451,
-            "stop" : 1698682163472,
-            "duration" : 21
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163499,
-        "stop" : 1698682163507,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163514,
-        "stop" : 1698682163522,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163529,
-        "stop" : 1698682163564,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163544,
-          "stop" : 1698682163564,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163544,
-            "stop" : 1698682163564,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163591,
-        "stop" : 1698682163598,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163605,
-        "stop" : 1698682163611,
-        "duration" : 6
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163618,
-        "stop" : 1698682163656,
-        "duration" : 38
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163635,
-          "stop" : 1698682163656,
-          "duration" : 21
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163635,
-            "stop" : 1698682163656,
-            "duration" : 21
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163683,
-        "stop" : 1698682163691,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163698,
-        "stop" : 1698682163705,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163712,
-        "stop" : 1698682163754,
-        "duration" : 42
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163734,
-          "stop" : 1698682163754,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163734,
-            "stop" : 1698682163754,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163782,
-        "stop" : 1698682163790,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163797,
-        "stop" : 1698682163804,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163812,
-        "stop" : 1698682163847,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163827,
-          "stop" : 1698682163847,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163827,
-            "stop" : 1698682163847,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163875,
-        "stop" : 1698682163885,
-        "duration" : 10
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163893,
-        "stop" : 1698682163899,
-        "duration" : 6
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682163907,
-        "stop" : 1698682163942,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682163922,
-          "stop" : 1698682163942,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682163922,
-            "stop" : 1698682163942,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682163968,
-        "stop" : 1698682163976,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682163983,
-        "stop" : 1698682163992,
-        "duration" : 9
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682164000,
-        "stop" : 1698682164035,
-        "duration" : 35
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Check element is clickable",
-        "time" : {
-          "start" : 1698682164015,
-          "stop" : 1698682164035,
-          "duration" : 20
-        },
-        "status" : "passed",
-        "steps" : [ {
-          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-          "time" : {
-            "start" : 1698682164015,
-            "stop" : 1698682164035,
-            "duration" : 20
-          },
-          "status" : "passed",
-          "steps" : [ ],
-          "attachments" : [ ],
-          "parameters" : [ ],
-          "attachmentsCount" : 0,
-          "shouldDisplayMessage" : false,
-          "stepsCount" : 0,
-          "hasContent" : false
-        } ],
-        "attachments" : [ ],
-        "parameters" : [ {
-          "name" : "locator",
-          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
-        } ],
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "stepsCount" : 1,
-        "hasContent" : true
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 2,
-      "hasContent" : true
-    }, {
-      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
-      "time" : {
-        "start" : 1698682164062,
-        "stop" : 1698682164070,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
-      "time" : {
-        "start" : 1698682164077,
-        "stop" : 1698682164084,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
-      "time" : {
-        "start" : 1698682164092,
-        "stop" : 1698682164129,
+        "start" : 1698682492184,
+        "stop" : 1698682492221,
         "duration" : 37
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is clickable",
         "time" : {
-          "start" : 1698682164107,
-          "stop" : 1698682164129,
-          "duration" : 22
+          "start" : 1698682492200,
+          "stop" : 1698682492221,
+          "duration" : 21
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
           "time" : {
-            "start" : 1698682164107,
-            "stop" : 1698682164129,
-            "duration" : 22
+            "start" : 1698682492200,
+            "stop" : 1698682492221,
+            "duration" : 21
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1481,8 +857,86 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
       "time" : {
-        "start" : 1698682164158,
-        "stop" : 1698682164166,
+        "start" : 1698682492247,
+        "stop" : 1698682492256,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492263,
+        "stop" : 1698682492270,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492278,
+        "stop" : 1698682492313,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492293,
+          "stop" : 1698682492313,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492293,
+            "stop" : 1698682492313,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492341,
+        "stop" : 1698682492349,
         "duration" : 8
       },
       "status" : "passed",
@@ -1496,8 +950,86 @@
     }, {
       "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
       "time" : {
-        "start" : 1698682164174,
-        "stop" : 1698682164180,
+        "start" : 1698682492357,
+        "stop" : 1698682492364,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492372,
+        "stop" : 1698682492407,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492387,
+          "stop" : 1698682492407,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492387,
+            "stop" : 1698682492407,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492433,
+        "stop" : 1698682492441,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492448,
+        "stop" : 1698682492454,
         "duration" : 6
       },
       "status" : "passed",
@@ -1511,25 +1043,493 @@
     }, {
       "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
       "time" : {
-        "start" : 1698682164190,
-        "stop" : 1698682164230,
-        "duration" : 40
+        "start" : 1698682492461,
+        "stop" : 1698682492497,
+        "duration" : 36
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Check element is clickable",
         "time" : {
-          "start" : 1698682164204,
-          "stop" : 1698682164230,
-          "duration" : 26
+          "start" : 1698682492476,
+          "stop" : 1698682492497,
+          "duration" : 21
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
           "time" : {
-            "start" : 1698682164205,
-            "stop" : 1698682164230,
-            "duration" : 25
+            "start" : 1698682492476,
+            "stop" : 1698682492497,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492527,
+        "stop" : 1698682492534,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492542,
+        "stop" : 1698682492549,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492557,
+        "stop" : 1698682492602,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492579,
+          "stop" : 1698682492602,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492579,
+            "stop" : 1698682492602,
+            "duration" : 23
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492631,
+        "stop" : 1698682492639,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492646,
+        "stop" : 1698682492653,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492660,
+        "stop" : 1698682492695,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492675,
+          "stop" : 1698682492695,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492675,
+            "stop" : 1698682492695,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492723,
+        "stop" : 1698682492731,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492738,
+        "stop" : 1698682492745,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492752,
+        "stop" : 1698682492788,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492768,
+          "stop" : 1698682492788,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492768,
+            "stop" : 1698682492788,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492817,
+        "stop" : 1698682492826,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492834,
+        "stop" : 1698682492841,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492848,
+        "stop" : 1698682492885,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492864,
+          "stop" : 1698682492885,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492864,
+            "stop" : 1698682492885,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682492914,
+        "stop" : 1698682492923,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682492930,
+        "stop" : 1698682492937,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682492945,
+        "stop" : 1698682492981,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682492960,
+          "stop" : 1698682492981,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682492960,
+            "stop" : 1698682492981,
+            "duration" : 21
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698682493013,
+        "stop" : 1698682493022,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698682493029,
+        "stop" : 1698682493036,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698682493043,
+        "stop" : 1698682493081,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698682493059,
+          "stop" : 1698682493081,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698682493059,
+            "stop" : 1698682493081,
+            "duration" : 22
           },
           "status" : "passed",
           "steps" : [ ],
@@ -1567,16 +1567,16 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1698682164263,
-      "stop" : 1698682164380,
-      "duration" : 117
+      "start" : 1698682493109,
+      "stop" : 1698682493230,
+      "duration" : 121
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "965f364d62323507",
-      "name" : "Screenshot 2023-10-30 16:09:24.322509",
-      "source" : "965f364d62323507.png",
+      "uid" : "20c8d3b7a25cd2df",
+      "name" : "Screenshot 2023-10-30 16:14:53.173321",
+      "source" : "20c8d3b7a25cd2df.png",
       "type" : "image/png",
       "size" : 10622
     } ],
@@ -1600,10 +1600,10 @@
     "value" : "TestPrepositions_1_4"
   }, {
     "name" : "host",
-    "value" : "fv-az360-828"
+    "value" : "fv-az616-202"
   }, {
     "name" : "thread",
-    "value" : "1822-MainThread"
+    "value" : "1843-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -1630,64 +1630,71 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 7,
+        "passed" : 8,
         "unknown" : 0,
-        "total" : 7
+        "total" : 8
       },
       "items" : [ {
-        "uid" : "337d4bae8aa689c9",
+        "uid" : "6d378dc1d5165bee",
         "status" : "passed",
         "time" : {
-          "start" : 1698681838563,
-          "stop" : 1698681841800,
-          "duration" : 3237
+          "start" : 1698682165192,
+          "stop" : 1698682168234,
+          "duration" : 3042
         }
       }, {
-        "uid" : "bd5a07a6cca42607",
+        "uid" : "b9afc97ab782a7da",
         "status" : "passed",
         "time" : {
-          "start" : 1698680745149,
-          "stop" : 1698680748164,
-          "duration" : 3015
+          "start" : 1698681842737,
+          "stop" : 1698681845926,
+          "duration" : 3189
         }
       }, {
-        "uid" : "d4fac504f79182",
+        "uid" : "5d714071f7c77aa4",
         "status" : "passed",
         "time" : {
-          "start" : 1698679341705,
-          "stop" : 1698679345686,
-          "duration" : 3981
+          "start" : 1698680749091,
+          "stop" : 1698680752094,
+          "duration" : 3003
         }
       }, {
-        "uid" : "c0ba8c2e039dc313",
+        "uid" : "b1f466d394a7c29c",
         "status" : "passed",
         "time" : {
-          "start" : 1698679055375,
-          "stop" : 1698679058836,
-          "duration" : 3461
+          "start" : 1698679346666,
+          "stop" : 1698679350652,
+          "duration" : 3986
         }
       }, {
-        "uid" : "8b250fab97e73bc4",
+        "uid" : "783e38e21255534f",
         "status" : "passed",
-        "statusDetails" : "XPASS",
         "time" : {
-          "start" : 1698678044695,
-          "stop" : 1698678048838,
-          "duration" : 4143
+          "start" : 1698679059810,
+          "stop" : 1698679063353,
+          "duration" : 3543
         }
       }, {
-        "uid" : "bd512b95c2246fbe",
-        "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/bd512b95c2246fbe",
+        "uid" : "f6eecfee8168b5d4",
         "status" : "passed",
         "time" : {
-          "start" : 1698607622741,
-          "stop" : 1698607625795,
-          "duration" : 3054
+          "start" : 1698678049814,
+          "stop" : 1698678053610,
+          "duration" : 3796
+        }
+      }, {
+        "uid" : "2852e90a61e7cf77",
+        "reportUrl" : "https://lambotik.github.io/English-exercises-AQA/8//#testresult/2852e90a61e7cf77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1698607626697,
+          "stop" : 1698607629772,
+          "duration" : 3075
         }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "338ddfa1a829a2f4.json",
+  "source" : "221d37fefceb6573.json",
   "parameterValues" : [ ]
 }
