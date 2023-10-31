@@ -43,9 +43,9 @@ class TestChapter1:
 
 
     @allure.sub_suite('1.2. Test Put the correct preposition!')
-    @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_of_places')
+    @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_of_place')
     class TestPrepositions_1_2:
-        url = 'https://english.areso.pro/lesson.html?lesson=prepositions_of_places'
+        url = 'https://english.areso.pro/lesson.html?lesson=prepositions_of_place'
 
         @allure.title('test_check_main_options')
         @allure.description('Check main page options.')
