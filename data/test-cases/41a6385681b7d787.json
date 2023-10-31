@@ -1,0 +1,1826 @@
+{
+  "uid" : "41a6385681b7d787",
+  "name" : "test_check_questions_no_repeated",
+  "fullName" : "tests.test_cards.TestPrepositions_1_6#test_check_questions_no_repeated",
+  "historyId" : "8f83982ef858f96f3b131878dcfc5219",
+  "time" : {
+    "start" : 1698771417195,
+    "stop" : 1698771421428,
+    "duration" : 4233
+  },
+  "description" : "Check questions no repeated.",
+  "descriptionHtml" : "<p>Check questions no repeated.</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Question is repeated\nassert {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 11: 'I came here ... a taxi', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'} == {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'}\n  Common items:\n  {1: 'I did that ... hand',\n   2: 'Last play I visited was ... Anton Checkhov',\n   3: 'Over the year, I increased my salary ... 20 per cent',\n   4: 'I came here ... a taxi',\n   5: 'I did that ... purpose',\n   6: 'Last book I read was ... Agatha Christie',\n   7: 'I cracked it ... a hammer',\n   8: 'The football game was watched ... millions of people',\n   9: 'I did that ... mistake',\n   10: 'The light switch is ... the fridge',\n   12: 'Have you ever been bitten ... a dog?',\n   13: 'Do you accept payments ... cheque?',\n   14: 'I did that ... accident',\n   15: 'He won in the race ... five metres',\n   16: 'I came here ... rail',\n   17: 'I came here ... the 6.45 train',\n   18: 'Could you pay ... cash?',\n   19: 'Your place is ... my side',\n   20: 'I sent the mail ... DHL Express'}\n  Left contains 1 more item:\n  {11: 'I came here ... a taxi'}\n  Full diff:\n    {\n     1: 'I did that ... hand',\n     2: 'Last play I visited was ... Anton Checkhov',\n     3: 'Over the year, I increased my salary ... 20 per cent',\n     4: 'I came here ... a taxi',\n     5: 'I did that ... purpose',\n     6: 'Last book I read was ... Agatha Christie',\n     7: 'I cracked it ... a hammer',\n     8: 'The football game was watched ... millions of people',\n     9: 'I did that ... mistake',\n     10: 'The light switch is ... the fridge',\n  +  11: 'I came here ... a taxi',\n     12: 'Have you ever been bitten ... a dog?',\n     13: 'Do you accept payments ... cheque?',\n     14: 'I did that ... accident',\n     15: 'He won in the race ... five metres',\n     16: 'I came here ... rail',\n     17: 'I came here ... the 6.45 train',\n     18: 'Could you pay ... cash?',\n     19: 'Your place is ... my side',\n     20: 'I sent the mail ... DHL Express',\n    }",
+  "statusTrace" : "self = <tests.test_cards.TestChapter1.TestPrepositions_1_6 object at 0x7f8cba0b5ae0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"90d78a1c9502e76328b145c3e21000d9\")>\n\n    @allure.title('test_check_questions_no_repeated')\n    @allure.description('Check questions no repeated.')\n    @allure.severity('NORMAL')\n    @allure.id(2)\n    @allure.title('Check questions no repeated.')\n    def test_check_questions_no_repeated(self, driver):\n        main_page = PrepositionsPages(driver, self.url)\n        main_page.open()\n        data1, data2 = main_page.check_questions_no_repeated(main_page)\n>       assert data1 == data2, 'Question is repeated'\nE       AssertionError: Question is repeated\nE       assert {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 11: 'I came here ... a taxi', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'} == {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'}\nE         Common items:\nE         {1: 'I did that ... hand',\nE          2: 'Last play I visited was ... Anton Checkhov',\nE          3: 'Over the year, I increased my salary ... 20 per cent',\nE          4: 'I came here ... a taxi',\nE          5: 'I did that ... purpose',\nE          6: 'Last book I read was ... Agatha Christie',\nE          7: 'I cracked it ... a hammer',\nE          8: 'The football game was watched ... millions of people',\nE          9: 'I did that ... mistake',\nE          10: 'The light switch is ... the fridge',\nE          12: 'Have you ever been bitten ... a dog?',\nE          13: 'Do you accept payments ... cheque?',\nE          14: 'I did that ... accident',\nE          15: 'He won in the race ... five metres',\nE          16: 'I came here ... rail',\nE          17: 'I came here ... the 6.45 train',\nE          18: 'Could you pay ... cash?',\nE          19: 'Your place is ... my side',\nE          20: 'I sent the mail ... DHL Express'}\nE         Left contains 1 more item:\nE         {11: 'I came here ... a taxi'}\nE         Full diff:\nE           {\nE            1: 'I did that ... hand',\nE            2: 'Last play I visited was ... Anton Checkhov',\nE            3: 'Over the year, I increased my salary ... 20 per cent',\nE            4: 'I came here ... a taxi',\nE            5: 'I did that ... purpose',\nE            6: 'Last book I read was ... Agatha Christie',\nE            7: 'I cracked it ... a hammer',\nE            8: 'The football game was watched ... millions of people',\nE            9: 'I did that ... mistake',\nE            10: 'The light switch is ... the fridge',\nE         +  11: 'I came here ... a taxi',\nE            12: 'Have you ever been bitten ... a dog?',\nE            13: 'Do you accept payments ... cheque?',\nE            14: 'I did that ... accident',\nE            15: 'He won in the race ... five metres',\nE            16: 'I came here ... rail',\nE            17: 'I came here ... the 6.45 train',\nE            18: 'Could you pay ... cash?',\nE            19: 'Your place is ... my side',\nE            20: 'I sent the mail ... DHL Express',\nE           }\n\ntests/test_cards.py:202: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1698771416330,
+      "stop" : 1698771417195,
+      "duration" : 865
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698771277999,
+      "stop" : 1698771278087,
+      "duration" : 88
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Check questions no repeated.",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Question is repeated\nassert {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 11: 'I came here ... a taxi', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'} == {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'}\n  Common items:\n  {1: 'I did that ... hand',\n   2: 'Last play I visited was ... Anton Checkhov',\n   3: 'Over the year, I increased my salary ... 20 per cent',\n   4: 'I came here ... a taxi',\n   5: 'I did that ... purpose',\n   6: 'Last book I read was ... Agatha Christie',\n   7: 'I cracked it ... a hammer',\n   8: 'The football game was watched ... millions of people',\n   9: 'I did that ... mistake',\n   10: 'The light switch is ... the fridge',\n   12: 'Have you ever been bitten ... a dog?',\n   13: 'Do you accept payments ... cheque?',\n   14: 'I did that ... accident',\n   15: 'He won in the race ... five metres',\n   16: 'I came here ... rail',\n   17: 'I came here ... the 6.45 train',\n   18: 'Could you pay ... cash?',\n   19: 'Your place is ... my side',\n   20: 'I sent the mail ... DHL Express'}\n  Left contains 1 more item:\n  {11: 'I came here ... a taxi'}\n  Full diff:\n    {\n     1: 'I did that ... hand',\n     2: 'Last play I visited was ... Anton Checkhov',\n     3: 'Over the year, I increased my salary ... 20 per cent',\n     4: 'I came here ... a taxi',\n     5: 'I did that ... purpose',\n     6: 'Last book I read was ... Agatha Christie',\n     7: 'I cracked it ... a hammer',\n     8: 'The football game was watched ... millions of people',\n     9: 'I did that ... mistake',\n     10: 'The light switch is ... the fridge',\n  +  11: 'I came here ... a taxi',\n     12: 'Have you ever been bitten ... a dog?',\n     13: 'Do you accept payments ... cheque?',\n     14: 'I did that ... accident',\n     15: 'He won in the race ... five metres',\n     16: 'I came here ... rail',\n     17: 'I came here ... the 6.45 train',\n     18: 'Could you pay ... cash?',\n     19: 'Your place is ... my side',\n     20: 'I sent the mail ... DHL Express',\n    }",
+    "statusTrace" : "self = <tests.test_cards.TestChapter1.TestPrepositions_1_6 object at 0x7f8cba0b5ae0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"90d78a1c9502e76328b145c3e21000d9\")>\n\n    @allure.title('test_check_questions_no_repeated')\n    @allure.description('Check questions no repeated.')\n    @allure.severity('NORMAL')\n    @allure.id(2)\n    @allure.title('Check questions no repeated.')\n    def test_check_questions_no_repeated(self, driver):\n        main_page = PrepositionsPages(driver, self.url)\n        main_page.open()\n        data1, data2 = main_page.check_questions_no_repeated(main_page)\n>       assert data1 == data2, 'Question is repeated'\nE       AssertionError: Question is repeated\nE       assert {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 11: 'I came here ... a taxi', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'} == {1: 'I did that ... hand', 2: 'Last play I visited was ... Anton Checkhov', 3: 'Over the year, I increased my salary ... 20 per cent', 4: 'I came here ... a taxi', 5: 'I did that ... purpose', 6: 'Last book I read was ... Agatha Christie', 7: 'I cracked it ... a hammer', 8: 'The football game was watched ... millions of people', 9: 'I did that ... mistake', 10: 'The light switch is ... the fridge', 12: 'Have you ever been bitten ... a dog?', 13: 'Do you accept payments ... cheque?', 14: 'I did that ... accident', 15: 'He won in the race ... five metres', 16: 'I came here ... rail', 17: 'I came here ... the 6.45 train', 18: 'Could you pay ... cash?', 19: 'Your place is ... my side', 20: 'I sent the mail ... DHL Express'}\nE         Common items:\nE         {1: 'I did that ... hand',\nE          2: 'Last play I visited was ... Anton Checkhov',\nE          3: 'Over the year, I increased my salary ... 20 per cent',\nE          4: 'I came here ... a taxi',\nE          5: 'I did that ... purpose',\nE          6: 'Last book I read was ... Agatha Christie',\nE          7: 'I cracked it ... a hammer',\nE          8: 'The football game was watched ... millions of people',\nE          9: 'I did that ... mistake',\nE          10: 'The light switch is ... the fridge',\nE          12: 'Have you ever been bitten ... a dog?',\nE          13: 'Do you accept payments ... cheque?',\nE          14: 'I did that ... accident',\nE          15: 'He won in the race ... five metres',\nE          16: 'I came here ... rail',\nE          17: 'I came here ... the 6.45 train',\nE          18: 'Could you pay ... cash?',\nE          19: 'Your place is ... my side',\nE          20: 'I sent the mail ... DHL Express'}\nE         Left contains 1 more item:\nE         {11: 'I came here ... a taxi'}\nE         Full diff:\nE           {\nE            1: 'I did that ... hand',\nE            2: 'Last play I visited was ... Anton Checkhov',\nE            3: 'Over the year, I increased my salary ... 20 per cent',\nE            4: 'I came here ... a taxi',\nE            5: 'I did that ... purpose',\nE            6: 'Last book I read was ... Agatha Christie',\nE            7: 'I cracked it ... a hammer',\nE            8: 'The football game was watched ... millions of people',\nE            9: 'I did that ... mistake',\nE            10: 'The light switch is ... the fridge',\nE         +  11: 'I came here ... a taxi',\nE            12: 'Have you ever been bitten ... a dog?',\nE            13: 'Do you accept payments ... cheque?',\nE            14: 'I did that ... accident',\nE            15: 'He won in the race ... five metres',\nE            16: 'I came here ... rail',\nE            17: 'I came here ... the 6.45 train',\nE            18: 'Could you pay ... cash?',\nE            19: 'Your place is ... my side',\nE            20: 'I sent the mail ... DHL Express',\nE           }\n\ntests/test_cards.py:202: AssertionError",
+    "steps" : [ {
+      "name" : "Open page: https://english.areso.pro/lesson.html?lesson=prepositions_by",
+      "time" : {
+        "start" : 1698771417195,
+        "stop" : 1698771418514,
+        "duration" : 1319
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnTotal\"]')",
+      "time" : {
+        "start" : 1698771418514,
+        "stop" : 1698771418543,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771418590,
+        "stop" : 1698771418606,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771418619,
+        "stop" : 1698771418635,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771418645,
+        "stop" : 1698771418726,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771418679,
+          "stop" : 1698771418726,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771418679,
+            "stop" : 1698771418726,
+            "duration" : 47
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771418778,
+        "stop" : 1698771418794,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771418817,
+        "stop" : 1698771418826,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771418835,
+        "stop" : 1698771418895,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771418864,
+          "stop" : 1698771418895,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771418864,
+            "stop" : 1698771418895,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771418945,
+        "stop" : 1698771418957,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771418972,
+        "stop" : 1698771418982,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771418992,
+        "stop" : 1698771419046,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419012,
+          "stop" : 1698771419046,
+          "duration" : 34
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419012,
+            "stop" : 1698771419045,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419097,
+        "stop" : 1698771419108,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419120,
+        "stop" : 1698771419129,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419142,
+        "stop" : 1698771419194,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419161,
+          "stop" : 1698771419194,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419161,
+            "stop" : 1698771419194,
+            "duration" : 33
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419231,
+        "stop" : 1698771419248,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419259,
+        "stop" : 1698771419273,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419317,
+        "stop" : 1698771419368,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419337,
+          "stop" : 1698771419368,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419337,
+            "stop" : 1698771419368,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419414,
+        "stop" : 1698771419425,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419435,
+        "stop" : 1698771419445,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419457,
+        "stop" : 1698771419514,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419483,
+          "stop" : 1698771419514,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419483,
+            "stop" : 1698771419514,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419558,
+        "stop" : 1698771419568,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419581,
+        "stop" : 1698771419589,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419598,
+        "stop" : 1698771419644,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419617,
+          "stop" : 1698771419644,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419617,
+            "stop" : 1698771419644,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419682,
+        "stop" : 1698771419692,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419702,
+        "stop" : 1698771419711,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419719,
+        "stop" : 1698771419765,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419738,
+          "stop" : 1698771419764,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419738,
+            "stop" : 1698771419764,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419799,
+        "stop" : 1698771419808,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419820,
+        "stop" : 1698771419830,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419839,
+        "stop" : 1698771419885,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419859,
+          "stop" : 1698771419885,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419859,
+            "stop" : 1698771419885,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771419917,
+        "stop" : 1698771419929,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771419939,
+        "stop" : 1698771419948,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771419957,
+        "stop" : 1698771420002,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771419975,
+          "stop" : 1698771420002,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771419975,
+            "stop" : 1698771420002,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420044,
+        "stop" : 1698771420057,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420067,
+        "stop" : 1698771420076,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420089,
+        "stop" : 1698771420166,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420113,
+          "stop" : 1698771420166,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420113,
+            "stop" : 1698771420166,
+            "duration" : 53
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420211,
+        "stop" : 1698771420221,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420231,
+        "stop" : 1698771420241,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420251,
+        "stop" : 1698771420300,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420271,
+          "stop" : 1698771420300,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420271,
+            "stop" : 1698771420300,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420340,
+        "stop" : 1698771420352,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420362,
+        "stop" : 1698771420370,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420380,
+        "stop" : 1698771420428,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420399,
+          "stop" : 1698771420428,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420399,
+            "stop" : 1698771420428,
+            "duration" : 29
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420474,
+        "stop" : 1698771420484,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420495,
+        "stop" : 1698771420503,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420512,
+        "stop" : 1698771420559,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420532,
+          "stop" : 1698771420559,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420532,
+            "stop" : 1698771420559,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420592,
+        "stop" : 1698771420601,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420613,
+        "stop" : 1698771420621,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420631,
+        "stop" : 1698771420677,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420650,
+          "stop" : 1698771420677,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420650,
+            "stop" : 1698771420677,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420713,
+        "stop" : 1698771420723,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420732,
+        "stop" : 1698771420741,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420753,
+        "stop" : 1698771420802,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420772,
+          "stop" : 1698771420802,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420772,
+            "stop" : 1698771420802,
+            "duration" : 30
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771420848,
+        "stop" : 1698771420861,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771420876,
+        "stop" : 1698771420886,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771420897,
+        "stop" : 1698771420969,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771420930,
+          "stop" : 1698771420969,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771420930,
+            "stop" : 1698771420969,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771421007,
+        "stop" : 1698771421022,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771421034,
+        "stop" : 1698771421044,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771421055,
+        "stop" : 1698771421109,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771421078,
+          "stop" : 1698771421109,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771421078,
+            "stop" : 1698771421109,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771421144,
+        "stop" : 1698771421156,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771421166,
+        "stop" : 1698771421176,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771421188,
+        "stop" : 1698771421250,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771421211,
+          "stop" : 1698771421250,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771421211,
+            "stop" : 1698771421250,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnCurPos\"]')",
+      "time" : {
+        "start" : 1698771421290,
+        "stop" : 1698771421302,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//div[@id=\"question\"]')",
+      "time" : {
+        "start" : 1698771421313,
+        "stop" : 1698771421323,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is visible and clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+      "time" : {
+        "start" : 1698771421339,
+        "stop" : 1698771421392,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check element is clickable",
+        "time" : {
+          "start" : 1698771421361,
+          "stop" : 1698771421392,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Check elements are clickable: ('xpath', '//button[@id=\"nextBtn\"]')",
+          "time" : {
+            "start" : 1698771421361,
+            "stop" : 1698771421392,
+            "duration" : 31
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('xpath', '//button[@id=\"nextBtn\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 102,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1698771421485,
+      "stop" : 1698771421608,
+      "duration" : 123
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "157052d3fe4dce07",
+      "name" : "Screenshot 2023-10-31 16:57:01.550247",
+      "source" : "157052d3fe4dce07.png",
+      "type" : "image/png",
+      "size" : 12370
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "as_id",
+    "value" : "2"
+  }, {
+    "name" : "suite",
+    "value" : "Chapter 1"
+  }, {
+    "name" : "subSuite",
+    "value" : "1.6. Usage of \"by\" preposition."
+  }, {
+    "name" : "severity",
+    "value" : "NORMAL"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1028-482"
+  }, {
+    "name" : "thread",
+    "value" : "1848-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://english.areso.pro/lesson.html?lesson=prepositions_by",
+    "url" : "https://english.areso.pro/lesson.html?lesson=prepositions_by",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "38849c7802df06ef",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Question is repeated\nassert {1: 'The football game was watched ... millions of people', 2: 'I cracked it ... a hammer', 3: 'Last book I read was ... Agatha Christie', 4: 'I did that ... mistake', 5: 'Last play I visited was ... Anton Checkhov', 6: 'Your place is ... my side', 7: 'I did that ... hand', 8: 'Over the year, I increased my salary ... $300', 9: 'I came here ... the 6.45 bus', 10: 'Have you ever been bitten ... a dog?', 11: 'He won in the race ... five metres', 12: 'Could you pay ... cash?', 13: 'I did that ... mistake', 14: 'I did that ... purpose', 15: 'I sent the mail ... DHL Express', 16: 'I came here ... a taxi', 17: 'I came here ... my car', 18: 'I came here ... air', 19: 'The light switch is ... the fridge', 20: 'Do you accept payments ... credit card?'} == {1: 'The football game was watched ... millions of people', 2: 'I cracked it ... a hammer', 3: 'Last book I read was ... Agatha Christie', 4: 'I did that ... mistake', 5: 'Last play I visited was ... Anton Checkhov', 6: 'Your place is ... my side', 7: 'I did that ... hand', 8: 'Over the year, I increased my salary ... $300', 9: 'I came here ... the 6.45 bus', 10: 'Have you ever been bitten ... a dog?', 11: 'He won in the race ... five metres', 12: 'Could you pay ... cash?', 14: 'I did that ... purpose', 15: 'I sent the mail ... DHL Express', 16: 'I came here ... a taxi', 17: 'I came here ... my car', 18: 'I came here ... air', 19: 'The light switch is ... the fridge', 20: 'Do you accept payments ... credit card?'}\n  Common items:\n  {1: 'The football game was watched ... millions of people',\n   2: 'I cracked it ... a hammer',\n   3: 'Last book I read was ... Agatha Christie',\n   4: 'I did that ... mistake',\n   5: 'Last play I visited was ... Anton Checkhov',\n   6: 'Your place is ... my side',\n   7: 'I did that ... hand',\n   8: 'Over the year, I increased my salary ... $300',\n   9: 'I came here ... the 6.45 bus',\n   10: 'Have you ever been bitten ... a dog?',\n   11: 'He won in the race ... five metres',\n   12: 'Could you pay ... cash?',\n   14: 'I did that ... purpose',\n   15: 'I sent the mail ... DHL Express',\n   16: 'I came here ... a taxi',\n   17: 'I came here ... my car',\n   18: 'I came here ... air',\n   19: 'The light switch is ... the fridge',\n   20: 'Do you accept payments ... credit card?'}\n  Left contains 1 more item:\n  {13: 'I did that ... mistake'}\n  Full diff:\n    {\n     1: 'The football game was watched ... millions of people',\n     2: 'I cracked it ... a hammer',\n     3: 'Last book I read was ... Agatha Christie',\n     4: 'I did that ... mistake',\n     5: 'Last play I visited was ... Anton Checkhov',\n     6: 'Your place is ... my side',\n     7: 'I did that ... hand',\n     8: 'Over the year, I increased my salary ... $300',\n     9: 'I came here ... the 6.45 bus',\n     10: 'Have you ever been bitten ... a dog?',\n     11: 'He won in the race ... five metres',\n     12: 'Could you pay ... cash?',\n  +  13: 'I did that ... mistake',\n     14: 'I did that ... purpose',\n     15: 'I sent the mail ... DHL Express',\n     16: 'I came here ... a taxi',\n     17: 'I came here ... my car',\n     18: 'I came here ... air',\n     19: 'The light switch is ... the fridge',\n     20: 'Do you accept payments ... credit card?',\n    }",
+        "time" : {
+          "start" : 1698754766874,
+          "stop" : 1698754770355,
+          "duration" : 3481
+        }
+      }, {
+        "uid" : "dfa0ba7c2a896ec7",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Question is repeated\nassert {1: 'Last book I read was ... Agatha Christie', 2: 'I came here ... the 6.45 bus', 3: 'Your place is ... my side', 4: 'The light switch is ... the fridge', 5: 'I came here ... ferrow', 6: 'Over the year, I increased my salary ... $300', 7: 'The football game was watched ... millions of people', 8: 'I did that ... purpose', 9: 'I sent mail ... FedEx', 10: 'I did that ... hand', 11: 'Last play I visited was ... Anton Checkhov', 12: 'Do you accept payments ... credit card?', 13: 'Could you pay ... cash?', 14: 'I came here ... a taxi', 15: 'Have you ever been bitten ... a dog?', 16: 'I came here ... a taxi', 17: 'He won in the race ... 0.2 second', 18: 'I did that ... chance', 19: 'I cracked it ... a hammer', 20: 'I did that ... accident'} == {1: 'Last book I read was ... Agatha Christie', 2: 'I came here ... the 6.45 bus', 3: 'Your place is ... my side', 4: 'The light switch is ... the fridge', 5: 'I came here ... ferrow', 6: 'Over the year, I increased my salary ... $300', 7: 'The football game was watched ... millions of people', 8: 'I did that ... purpose', 9: 'I sent mail ... FedEx', 10: 'I did that ... hand', 11: 'Last play I visited was ... Anton Checkhov', 12: 'Do you accept payments ... credit card?', 13: 'Could you pay ... cash?', 14: 'I came here ... a taxi', 15: 'Have you ever been bitten ... a dog?', 17: 'He won in the race ... 0.2 second', 18: 'I did that ... chance', 19: 'I cracked it ... a hammer', 20: 'I did that ... accident'}\n  Common items:\n  {1: 'Last book I read was ... Agatha Christie',\n   2: 'I came here ... the 6.45 bus',\n   3: 'Your place is ... my side',\n   4: 'The light switch is ... the fridge',\n   5: 'I came here ... ferrow',\n   6: 'Over the year, I increased my salary ... $300',\n   7: 'The football game was watched ... millions of people',\n   8: 'I did that ... purpose',\n   9: 'I sent mail ... FedEx',\n   10: 'I did that ... hand',\n   11: 'Last play I visited was ... Anton Checkhov',\n   12: 'Do you accept payments ... credit card?',\n   13: 'Could you pay ... cash?',\n   14: 'I came here ... a taxi',\n   15: 'Have you ever been bitten ... a dog?',\n   17: 'He won in the race ... 0.2 second',\n   18: 'I did that ... chance',\n   19: 'I cracked it ... a hammer',\n   20: 'I did that ... accident'}\n  Left contains 1 more item:\n  {16: 'I came here ... a taxi'}\n  Full diff:\n    {\n     1: 'Last book I read was ... Agatha Christie',\n     2: 'I came here ... the 6.45 bus',\n     3: 'Your place is ... my side',\n     4: 'The light switch is ... the fridge',\n     5: 'I came here ... ferrow',\n     6: 'Over the year, I increased my salary ... $300',\n     7: 'The football game was watched ... millions of people',\n     8: 'I did that ... purpose',\n     9: 'I sent mail ... FedEx',\n     10: 'I did that ... hand',\n     11: 'Last play I visited was ... Anton Checkhov',\n     12: 'Do you accept payments ... credit card?',\n     13: 'Could you pay ... cash?',\n     14: 'I came here ... a taxi',\n     15: 'Have you ever been bitten ... a dog?',\n  +  16: 'I came here ... a taxi',\n     17: 'He won in the race ... 0.2 second',\n     18: 'I did that ... chance',\n     19: 'I cracked it ... a hammer',\n     20: 'I did that ... accident',\n    }",
+        "time" : {
+          "start" : 1698754178489,
+          "stop" : 1698754181659,
+          "duration" : 3170
+        }
+      }, {
+        "uid" : "7e7815b412ab58de",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Question is repeated\nassert {1: 'I did that ... accident', 2: 'I did that ... purpose', 3: 'I came here ... a taxi', 4: 'Over the year, I increased my salary ... 20 per cent', 5: 'Last book I read was ... Agatha Christie', 6: 'Could you pay ... cash?', 7: 'I did that ... hand', 8: 'Have you ever been bitten ... a dog?', 9: 'I cracked it ... a hammer', 10: 'I came here ... ferrow', 11: 'I sent the mail ... FedEx', 12: 'The light switch is ... the fridge', 13: 'Do you accept payments ... credit card?', 14: 'I came here ... a taxi', 15: 'He won in the race ... 0.2 second', 16: 'Last play I visited was ... Anton Checkhov', 17: 'I did that ... accident', 18: 'The football game was watched ... millions of people', 19: 'I came here ... the 6.45 train', 20: 'Your place is ... my side'} == {1: 'I did that ... accident', 2: 'I did that ... purpose', 3: 'I came here ... a taxi', 4: 'Over the year, I increased my salary ... 20 per cent', 5: 'Last book I read was ... Agatha Christie', 6: 'Could you pay ... cash?', 7: 'I did that ... hand', 8: 'Have you ever been bitten ... a dog?', 9: 'I cracked it ... a hammer', 10: 'I came here ... ferrow', 11: 'I sent the mail ... FedEx', 12: 'The light switch is ... the fridge', 13: 'Do you accept payments ... credit card?', 15: 'He won in the race ... 0.2 second', 16: 'Last play I visited was ... Anton Checkhov', 18: 'The football game was watched ... millions of people', 19: 'I came here ... the 6.45 train', 20: 'Your place is ... my side'}\n  Common items:\n  {1: 'I did that ... accident',\n   2: 'I did that ... purpose',\n   3: 'I came here ... a taxi',\n   4: 'Over the year, I increased my salary ... 20 per cent',\n   5: 'Last book I read was ... Agatha Christie',\n   6: 'Could you pay ... cash?',\n   7: 'I did that ... hand',\n   8: 'Have you ever been bitten ... a dog?',\n   9: 'I cracked it ... a hammer',\n   10: 'I came here ... ferrow',\n   11: 'I sent the mail ... FedEx',\n   12: 'The light switch is ... the fridge',\n   13: 'Do you accept payments ... credit card?',\n   15: 'He won in the race ... 0.2 second',\n   16: 'Last play I visited was ... Anton Checkhov',\n   18: 'The football game was watched ... millions of people',\n   19: 'I came here ... the 6.45 train',\n   20: 'Your place is ... my side'}\n  Left contains 2 more items:\n  {14: 'I came here ... a taxi', 17: 'I did that ... accident'}\n  Full diff:\n    {\n     1: 'I did that ... accident',\n     2: 'I did that ... purpose',\n     3: 'I came here ... a taxi',\n     4: 'Over the year, I increased my salary ... 20 per cent',\n     5: 'Last book I read was ... Agatha Christie',\n     6: 'Could you pay ... cash?',\n     7: 'I did that ... hand',\n     8: 'Have you ever been bitten ... a dog?',\n     9: 'I cracked it ... a hammer',\n     10: 'I came here ... ferrow',\n     11: 'I sent the mail ... FedEx',\n     12: 'The light switch is ... the fridge',\n     13: 'Do you accept payments ... credit card?',\n  +  14: 'I came here ... a taxi',\n     15: 'He won in the race ... 0.2 second',\n     16: 'Last play I visited was ... Anton Checkhov',\n  +  17: 'I did that ... accident',\n     18: 'The football game was watched ... millions of people',\n     19: 'I came here ... the 6.45 train',\n     20: 'Your place is ... my side',\n    }",
+        "time" : {
+          "start" : 1698753114692,
+          "stop" : 1698753118588,
+          "duration" : 3896
+        }
+      }, {
+        "uid" : "62761506b0d74708",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: Question is repeated\nassert {1: 'I cracked it ... a hammer', 2: 'I did that ... chance', 3: 'Do you accept payments ... credit card?', 4: 'Could you pay ... cash?', 5: 'I came here ... bicycle', 6: 'I came here ... a taxi', 7: 'Last book I read was ... Agatha Christie', 8: 'The light switch is ... the fridge', 9: 'I sent mail ... FedEx', 10: 'I did that ... chance', 11: 'Over the year, I increased my salary ... $300', 12: 'He won in the race ... 0.2 second', 13: 'I came here ... the 6.45 bus', 14: 'The football game was watched ... millions of people', 15: 'I did that ... purpose', 16: 'Have you ever been bitten ... a horse?', 17: 'Last play I visited was ... Anton Checkhov', 18: 'Your place is ... my side', 19: 'I came here ... a taxi', 20: 'I did that ... hand'} == {1: 'I cracked it ... a hammer', 2: 'I did that ... chance', 3: 'Do you accept payments ... credit card?', 4: 'Could you pay ... cash?', 5: 'I came here ... bicycle', 6: 'I came here ... a taxi', 7: 'Last book I read was ... Agatha Christie', 8: 'The light switch is ... the fridge', 9: 'I sent mail ... FedEx', 11: 'Over the year, I increased my salary ... $300', 12: 'He won in the race ... 0.2 second', 13: 'I came here ... the 6.45 bus', 14: 'The football game was watched ... millions of people', 15: 'I did that ... purpose', 16: 'Have you ever been bitten ... a horse?', 17: 'Last play I visited was ... Anton Checkhov', 18: 'Your place is ... my side', 20: 'I did that ... hand'}\n  Common items:\n  {1: 'I cracked it ... a hammer',\n   2: 'I did that ... chance',\n   3: 'Do you accept payments ... credit card?',\n   4: 'Could you pay ... cash?',\n   5: 'I came here ... bicycle',\n   6: 'I came here ... a taxi',\n   7: 'Last book I read was ... Agatha Christie',\n   8: 'The light switch is ... the fridge',\n   9: 'I sent mail ... FedEx',\n   11: 'Over the year, I increased my salary ... $300',\n   12: 'He won in the race ... 0.2 second',\n   13: 'I came here ... the 6.45 bus',\n   14: 'The football game was watched ... millions of people',\n   15: 'I did that ... purpose',\n   16: 'Have you ever been bitten ... a horse?',\n   17: 'Last play I visited was ... Anton Checkhov',\n   18: 'Your place is ... my side',\n   20: 'I did that ... hand'}\n  Left contains 2 more items:\n  {10: 'I did that ... chance', 19: 'I came here ... a taxi'}\n  Full diff:\n    {\n     1: 'I cracked it ... a hammer',\n     2: 'I did that ... chance',\n     3: 'Do you accept payments ... credit card?',\n     4: 'Could you pay ... cash?',\n     5: 'I came here ... bicycle',\n     6: 'I came here ... a taxi',\n     7: 'Last book I read was ... Agatha Christie',\n     8: 'The light switch is ... the fridge',\n     9: 'I sent mail ... FedEx',\n  +  10: 'I did that ... chance',\n     11: 'Over the year, I increased my salary ... $300',\n     12: 'He won in the race ... 0.2 second',\n     13: 'I came here ... the 6.45 bus',\n     14: 'The football game was watched ... millions of people',\n     15: 'I did that ... purpose',\n     16: 'Have you ever been bitten ... a horse?',\n     17: 'Last play I visited was ... Anton Checkhov',\n     18: 'Your place is ... my side',\n  +  19: 'I came here ... a taxi',\n     20: 'I did that ... hand',\n    }",
+        "time" : {
+          "start" : 1698750920812,
+          "stop" : 1698750924153,
+          "duration" : 3341
+        }
+      }, {
+        "uid" : "5bddae1c5401c2d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1698749577309,
+          "stop" : 1698749581623,
+          "duration" : 4314
+        }
+      }, {
+        "uid" : "4b5b2b5bdc89e37c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1698694260870,
+          "stop" : 1698694265084,
+          "duration" : 4214
+        }
+      }, {
+        "uid" : "7bf02ae8623a49a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1698687807653,
+          "stop" : 1698687811250,
+          "duration" : 3597
+        }
+      }, {
+        "uid" : "afde7876ba764083",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5640c8947fb3 <unknown>\n#1 0x5640c861b4a7 <unknown>\n#2 0x5640c864ec93 <unknown>\n#3 0x5640c864b10c <unknown>\n#4 0x5640c868dac6 <unknown>\n#5 0x5640c8684713 <unknown>\n#6 0x5640c865718b <unknown>\n#7 0x5640c8657f7e <unknown>\n#8 0x5640c890d8d8 <unknown>\n#9 0x5640c8911800 <unknown>\n#10 0x5640c891bcfc <unknown>\n#11 0x5640c8912418 <unknown>\n#12 0x5640c88df42f <unknown>\n#13 0x5640c89364e8 <unknown>\n#14 0x5640c89366b4 <unknown>\n#15 0x5640c8947143 <unknown>\n#16 0x7f66de494ac3 <unknown>",
+        "time" : {
+          "start" : 1698687489657,
+          "stop" : 1698687489657,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "52484ef075e1f141",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55899d66cfb3 <unknown>\n#1 0x55899d3404a7 <unknown>\n#2 0x55899d373c93 <unknown>\n#3 0x55899d37010c <unknown>\n#4 0x55899d3b2ac6 <unknown>\n#5 0x55899d3a9713 <unknown>\n#6 0x55899d37c18b <unknown>\n#7 0x55899d37cf7e <unknown>\n#8 0x55899d6328d8 <unknown>\n#9 0x55899d636800 <unknown>\n#10 0x55899d640cfc <unknown>\n#11 0x55899d637418 <unknown>\n#12 0x55899d60442f <unknown>\n#13 0x55899d65b4e8 <unknown>\n#14 0x55899d65b6b4 <unknown>\n#15 0x55899d66c143 <unknown>\n#16 0x7f4ba0e94ac3 <unknown>",
+        "time" : {
+          "start" : 1698687095626,
+          "stop" : 1698687095626,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "2bc48c7f425253a3",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558b62793fb3 <unknown>\n#1 0x558b624674a7 <unknown>\n#2 0x558b6249ac93 <unknown>\n#3 0x558b6249710c <unknown>\n#4 0x558b624d9ac6 <unknown>\n#5 0x558b624d0713 <unknown>\n#6 0x558b624a318b <unknown>\n#7 0x558b624a3f7e <unknown>\n#8 0x558b627598d8 <unknown>\n#9 0x558b6275d800 <unknown>\n#10 0x558b62767cfc <unknown>\n#11 0x558b6275e418 <unknown>\n#12 0x558b6272b42f <unknown>\n#13 0x558b627824e8 <unknown>\n#14 0x558b627826b4 <unknown>\n#15 0x558b62793143 <unknown>\n#16 0x7f0971e94ac3 <unknown>",
+        "time" : {
+          "start" : 1698686835208,
+          "stop" : 1698686835208,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "41a6385681b7d787.json",
+  "parameterValues" : [ ]
+}
