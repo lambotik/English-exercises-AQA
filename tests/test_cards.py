@@ -61,7 +61,6 @@ class TestChapter1:
         @allure.title('test_check_questions_no_repeated')
         @allure.description('Check questions no repeated.')
         @allure.severity('NORMAL')
-        @pytest.mark.xfail
         @allure.id(2)
         def test_check_questions_no_repeated(self, driver):
             main_page = PrepositionsPages(driver, self.url)

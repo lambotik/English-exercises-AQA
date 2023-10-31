@@ -130,6 +130,7 @@ class PrepositionsPages(BasePage):
     @staticmethod
     def check_args_is_not_presence(main_page):
         """
+        This method checks that the card is not empty and >
         This method goes through all the cards and checks whether the (args) value
         from the devtools has reached the client.
         :param main_page:
@@ -142,4 +143,5 @@ class PrepositionsPages(BasePage):
             question = main_page.get_question_text()
             data[current_card_number] = question
             assert 'args' not in question, 'Args is presence'
+            assert '1/N' not in question, 'No cards'
             main_page.click_next_card()
