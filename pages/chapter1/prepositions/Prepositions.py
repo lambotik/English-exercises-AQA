@@ -12,7 +12,7 @@ class PrepositionsPages(BasePage):
 
     def get_amount_of_cards(self):
         amount = int(self.element_is_presence(self.locators.AMOUNT_OF_CARDS).text)
-        print('Amount cards:', amount)
+        # print('Amount cards:', amount)
         return amount
 
     def get_current_card_number(self):
@@ -31,23 +31,23 @@ class PrepositionsPages(BasePage):
         with allure.step(f"Customer selected: {selected_button.get_attribute('value')}."):
             all_options = [value.get_attribute('value') for value
                            in self.elements_are_presence(self.locators.LIST_OF_RADIO_BUTTONS)]
-            print('All options:', all_options)
+            # print('All options:', all_options)
             selected_button_value = selected_button.get_attribute('value')
-            print('Selected option:', selected_button_value)
+            # print('Selected option:', selected_button_value)
             """Or we can use after click selected_button.is_selected()"""
             return selected_button_value, self.check_selected_radio_button(random_index)
 
     def check_answer(self):
         self.element_is_presence_and_clickable(self.locators.CHECK_ANSWER_BUTTON).click()
         answer = self.element_is_presence(self.locators.CORRECT_OR_WRONG).text
-        print('Correct or wrong answer:', answer)
+        # print('Correct or wrong answer:', answer)
         return answer
 
     def check_correct_answer(self):
         show_answer = self.element_is_presence_and_clickable(self.locators.SHOW_ANSWER_BUTTON)
         show_answer.click()
         correct_answer = self.element_is_presence(self.locators.CORRECT_ANSWER_TEXT).text
-        print(f'Correct answer: {correct_answer}')
+        # print(f'Correct answer: {correct_answer}')
         return correct_answer
 
     def click_next_card(self):
@@ -90,13 +90,14 @@ class PrepositionsPages(BasePage):
                 correct_or_wrong = main_page.check_answer()
                 correct_answer = main_page.check_correct_answer()
             with allure.step(f'Should be: {correct_answer}'):
-                print(f'Should be: {correct_answer}')
+                pass
+                # print(f'Should be: {correct_answer}')
             with allure.step(f'Result should be:{correct_answer}'):
                 assert result is True, 'Clicked button is not selected'
                 try:
                     assert button_value == correct_answer and correct_or_wrong == 'CORRECT'
-                    print('#' * 10, "It's right answer.", '#' * 10)
-                    print('\n')
+                    # print('#' * 10, "It's right answer.", '#' * 10)
+                    # print('\n')
                 except Exception as ex:
                     print('\n', ex, '\n', '#' * 10, 'Wrong answer!', '#' * 10, '\n')
                 main_page.click_next_card()
