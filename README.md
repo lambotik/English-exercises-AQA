@@ -1,6 +1,7 @@
 # English-exercises-AQA
 Tests for [English-exercises](https://github.com/Areso/English-exercises)
 
+Current allure-report here: [Allure-report](https://lambotik.github.io/English-exercises-AQA/#)
 
 While this for simple run, later I'll correct it.
 
