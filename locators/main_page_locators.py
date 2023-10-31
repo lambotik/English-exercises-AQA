@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class PrepositionsLocators:
-    # 1/32
+    # Chapter 1
     AMOUNT_OF_CARDS = (By.XPATH, '//span[@id="spnTotal"]')
     CURRENT_CARD_NUMBER = (By.XPATH, '//span[@id="spnCurPos"]')
     QUESTION = (By.XPATH, '//div[@id="question"]')
@@ -15,3 +15,6 @@ class PrepositionsLocators:
     SHOW_ANSWER_BUTTON = (By.XPATH, '//button[@id="showAnswerBtn"]')
     NEXT_CARD_BUTTON = (By.XPATH, '//button[@id="nextBtn"]')
     CORRECT_ANSWER_TEXT = (By.XPATH, '//lbl[@id="resultLbl"]')
+
+    # Chapter 2
+    INPUT_PLACE = (By.XPATH, '//input[@id="answer_text_field"]')
