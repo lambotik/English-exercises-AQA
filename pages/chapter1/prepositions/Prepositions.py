@@ -11,9 +11,10 @@ class PrepositionsPages(BasePage):
     locators = PrepositionsLocators()
 
     def get_amount_of_cards(self):
-        amount = int(self.element_is_presence(self.locators.AMOUNT_OF_CARDS).text)
+        amount = self.element_is_presence(self.locators.AMOUNT_OF_CARDS).text
+        assert amount.isdigit()
         # print('Amount cards:', amount)
-        return amount
+        return int(amount)
 
     def get_current_card_number(self):
         curd_number = int(self.element_is_presence(self.locators.CURRENT_CARD_NUMBER).text)
