@@ -12,7 +12,7 @@ def driver():
     options = Options()
     options.add_argument('--headless')
     driver = webdriver.Chrome(options=options)
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
     driver.maximize_window()
     yield driver
     attach = driver.get_screenshot_as_png()

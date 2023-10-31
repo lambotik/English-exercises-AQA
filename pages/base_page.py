@@ -12,7 +12,7 @@ class BasePage:
     def __init__(self, driver, url):
         self.driver = driver
         self.url = url
-        self.timeout = 10
+        self.timeout = 5
 
     def get_current_url(self):
         get_url = self.driver.current_url
