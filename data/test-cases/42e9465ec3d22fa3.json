@@ -1,0 +1,188 @@
+{
+  "uid" : "42e9465ec3d22fa3",
+  "name" : "test_check_questions_no_repeated",
+  "fullName" : "tests.test_cards.TestPrepositions_1_2#test_check_questions_no_repeated",
+  "historyId" : "544513e21414bbab9ced7e7c4c5f2da2",
+  "time" : {
+    "start" : 1698750856926,
+    "stop" : 1698750858420,
+    "duration" : 1494
+  },
+  "description" : "Check questions no repeated.",
+  "descriptionHtml" : "<p>Check questions no repeated.</p>\n",
+  "status" : "broken",
+  "statusMessage" : "ValueError: invalid literal for int() with base 10: 'N'",
+  "statusTrace" : "self = <tests.test_cards.TestChapter1.TestPrepositions_1_2 object at 0x7fdfa30bfc40>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ed540589bec95f0e12b724944483d9b0\")>\n\n    @allure.title('test_check_questions_no_repeated')\n    @allure.description('Check questions no repeated.')\n    @allure.severity('NORMAL')\n    @allure.id(2)\n    def test_check_questions_no_repeated(self, driver):\n        main_page = PrepositionsPages(driver, self.url)\n        main_page.open()\n>       data1, data2 = main_page.check_questions_no_repeated(main_page)\n\ntests/test_cards.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/chapter1/prepositions/Prepositions.py:117: in check_questions_no_repeated\n    amount_of_cards = main_page.get_amount_of_cards()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.chapter1.prepositions.Prepositions.PrepositionsPages object at 0x7fdfa33b2650>\n\n    def get_amount_of_cards(self):\n>       amount = int(self.element_is_presence(self.locators.AMOUNT_OF_CARDS).text)\nE       ValueError: invalid literal for int() with base 10: 'N'\n\npages/chapter1/prepositions/Prepositions.py:14: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1698750828438,
+      "stop" : 1698750828512,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1698750856126,
+      "stop" : 1698750856925,
+      "duration" : 799
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Check questions no repeated.",
+    "status" : "broken",
+    "statusMessage" : "ValueError: invalid literal for int() with base 10: 'N'",
+    "statusTrace" : "self = <tests.test_cards.TestChapter1.TestPrepositions_1_2 object at 0x7fdfa30bfc40>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"ed540589bec95f0e12b724944483d9b0\")>\n\n    @allure.title('test_check_questions_no_repeated')\n    @allure.description('Check questions no repeated.')\n    @allure.severity('NORMAL')\n    @allure.id(2)\n    def test_check_questions_no_repeated(self, driver):\n        main_page = PrepositionsPages(driver, self.url)\n        main_page.open()\n>       data1, data2 = main_page.check_questions_no_repeated(main_page)\n\ntests/test_cards.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/chapter1/prepositions/Prepositions.py:117: in check_questions_no_repeated\n    amount_of_cards = main_page.get_amount_of_cards()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.chapter1.prepositions.Prepositions.PrepositionsPages object at 0x7fdfa33b2650>\n\n    def get_amount_of_cards(self):\n>       amount = int(self.element_is_presence(self.locators.AMOUNT_OF_CARDS).text)\nE       ValueError: invalid literal for int() with base 10: 'N'\n\npages/chapter1/prepositions/Prepositions.py:14: ValueError",
+    "steps" : [ {
+      "name" : "Open page: https://english.areso.pro/lesson.html?lesson=prepositions_of_places",
+      "time" : {
+        "start" : 1698750856926,
+        "stop" : 1698750858394,
+        "duration" : 1468
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check element is presence: ('xpath', '//span[@id=\"spnTotal\"]')",
+      "time" : {
+        "start" : 1698750858394,
+        "stop" : 1698750858407,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1698750858434,
+      "stop" : 1698750858540,
+      "duration" : 106
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "632936f02b3daf49",
+      "name" : "Screenshot 2023-10-31 11:14:18.483013",
+      "source" : "632936f02b3daf49.png",
+      "type" : "image/png",
+      "size" : 14565
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "NORMAL"
+  }, {
+    "name" : "suite",
+    "value" : "Chapter 1"
+  }, {
+    "name" : "subSuite",
+    "value" : "1.2. Test Put the correct preposition!"
+  }, {
+    "name" : "as_id",
+    "value" : "2"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "host",
+    "value" : "fv-az413-279"
+  }, {
+    "name" : "thread",
+    "value" : "1816-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://english.areso.pro/lesson.html?lesson=prepositions_of_places",
+    "url" : "https://english.areso.pro/lesson.html?lesson=prepositions_of_places",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 1,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6c050643c995e8a8",
+        "status" : "skipped",
+        "statusDetails" : "XFAIL\n\nValueError: invalid literal for int() with base 10: 'N'",
+        "time" : {
+          "start" : 1698749501016,
+          "stop" : 1698749502912,
+          "duration" : 1896
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "42e9465ec3d22fa3.json",
+  "parameterValues" : [ ]
+}

@@ -5,14 +5,27 @@
     "children" : [ {
       "name" : "ValueError: invalid literal for int() with base 10: 'N'",
       "children" : [ {
-        "name" : "test_args_is_not_presence",
-        "uid" : "aa51aa3e354fb1ad",
+        "name" : "test_check_questions_no_repeated",
+        "uid" : "42e9465ec3d22fa3",
         "parentUid" : "a409eb8f5d8bd2e9b67cbb47f2a9adb0",
         "status" : "broken",
         "time" : {
-          "start" : 1698749503888,
-          "stop" : 1698749505782,
-          "duration" : 1894
+          "start" : 1698750856926,
+          "stop" : 1698750858420,
+          "duration" : 1494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_args_is_not_presence",
+        "uid" : "8e76cf05b2cb756e",
+        "parentUid" : "a409eb8f5d8bd2e9b67cbb47f2a9adb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1698750859355,
+          "stop" : 1698750860595,
+          "duration" : 1240
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,22 +37,39 @@
   }, {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: Question is repeated\nassert {1: 'He died ... asphyxiation', 2: 'I thank you ... the invitation', 3: 'The tunnel relies ... SSH connection', 4: 'I forgive her ... a cruel joke', 5: 'I need to pay ... rent for the flat', 6: 'My success relies ... whether I could complete the task', 7: 'All blamed the incident ... me', 8: 'All blamed the incident ... me', 9: 'I suspect ... they tried to cheat me with prices', 10: 'You could blame me ... that', 11: 'I congratulated him ... his promotion', 12: 'I accused girls ... being cruel', 13: 'She complimented me ... being smart.\\nWell, I said, it was pleasant', 14: 'I live ... pastry from Zorpas and Papantoniou', 15: 'I will pay ... this meal', 16: 'The author barely lives ... donations', 17: 'The tunnel relies ... SSH connection', 18: 'I need to pay ... the unitilities bill', 19: 'I wanna something to protect my skin ... the sun', 20: 'She never apologised ... that', 21: 'A human body consists ... flesh and 200 bones', 22: 'I suffer ... backache', 23: 'I wanna something to protect my skin ... the sun', 24: 'I appove ... how he loves to create games', 25: 'It depends ... how good the article is'} == {1: 'He died ... asphyxiation', 2: 'I thank you ... the invitation', 3: 'The tunnel relies ... SSH connection', 4: 'I forgive her ... a cruel joke', 5: 'I need to pay ... rent for the flat', 6: 'My success relies ... whether I could complete the task', 7: 'All blamed the incident ... me', 9: 'I suspect ... they tried to cheat me with prices', 10: 'You could blame me ... that', 11: 'I congratulated him ... his promotion', 12: 'I accused girls ... being cruel', 13: 'She complimented me ... being smart.\\nWell, I said, it was pleasant', 14: 'I live ... pastry from Zorpas and Papantoniou', 15: 'I will pay ... this meal', 16: 'The author barely lives ... donations', 18: 'I need to pay ... the unitilities bill', 19: 'I wanna something to protect my skin ... the sun', 20: 'She never apologised ... that', 21: 'A human body consists ... flesh and 200 bones', 22: 'I suffer ... backache', 24: 'I appove ... how he loves to create games', 25: 'It depends ... how good the article is'}\n  Common items:\n  {1: 'He died ... asphyxiation',\n   2: 'I thank you ... the invitation',\n   3: 'The tunnel relies ... SSH connection',\n   4: 'I forgive her ... a cruel joke',\n   5: 'I need to pay ... rent for the flat',\n   6: 'My success relies ... whether I could complete the task',\n   7: 'All blamed the incident ... me',\n   9: 'I suspect ... they tried to cheat me with prices',\n   10: 'You could blame me ... that',\n   11: 'I congratulated him ... his promotion',\n   12: 'I accused girls ... being cruel',\n   13: 'She complimented me ... being smart.\\nWell, I said, it was pleasant',\n   14: 'I live ... pastry from Zorpas and Papantoniou',\n   15: 'I will pay ... this meal',\n   16: 'The author barely lives ... donations',\n   18: 'I need to pay ... the unitilities bill',\n   19: 'I wanna something to protect my skin ... the sun',\n   20: 'She never apologised ... that',\n   21: 'A human body consists ... flesh and 200 bones',\n   22: 'I suffer ... backache',\n   24: 'I appove ... how he loves to create games',\n   25: 'It depends ... how good the article is'}\n  Left contains 3 more items:\n  {8: 'All blamed the incident ... me',\n   17: 'The tunnel relies ... SSH connection',\n   23: 'I wanna something to protect my skin ... the sun'}\n  Full diff:\n    {\n     1: 'He died ... asphyxiation',\n     2: 'I thank you ... the invitation',\n     3: 'The tunnel relies ... SSH connection',\n     4: 'I forgive her ... a cruel joke',\n     5: 'I need to pay ... rent for the flat',\n     6: 'My success relies ... whether I could complete the task',\n     7: 'All blamed the incident ... me',\n  +  8: 'All blamed the incident ... me',\n     9: 'I suspect ... they tried to cheat me with prices',\n     10: 'You could blame me ... that',\n     11: 'I congratulated him ... his promotion',\n     12: 'I accused girls ... being cruel',\n     13: 'She complimented me ... being smart.\\n'\n         'Well, I said, it was pleasant',\n     14: 'I live ... pastry from Zorpas and Papantoniou',\n     15: 'I will pay ... this meal',\n     16: 'The author barely lives ... donations',\n  +  17: 'The tunnel relies ... SSH connection',\n     18: 'I need to pay ... the unitilities bill',\n     19: 'I wanna something to protect my skin ... the sun',\n     20: 'She never apologised ... that',\n     21: 'A human body consists ... flesh and 200 bones',\n     22: 'I suffer ... backache',\n  +  23: 'I wanna something to protect my skin ... the sun',\n     24: 'I appove ... how he loves to create games',\n     25: 'It depends ... how good the article is',\n    }",
+      "name" : "AssertionError: Question is repeated\nassert {1: 'I cracked it ... a hammer', 2: 'I did that ... chance', 3: 'Do you accept payments ... credit card?', 4: 'Could you pay ... cash?', 5: 'I came here ... bicycle', 6: 'I came here ... a taxi', 7: 'Last book I read was ... Agatha Christie', 8: 'The light switch is ... the fridge', 9: 'I sent mail ... FedEx', 10: 'I did that ... chance', 11: 'Over the year, I increased my salary ... $300', 12: 'He won in the race ... 0.2 second', 13: 'I came here ... the 6.45 bus', 14: 'The football game was watched ... millions of people', 15: 'I did that ... purpose', 16: 'Have you ever been bitten ... a horse?', 17: 'Last play I visited was ... Anton Checkhov', 18: 'Your place is ... my side', 19: 'I came here ... a taxi', 20: 'I did that ... hand'} == {1: 'I cracked it ... a hammer', 2: 'I did that ... chance', 3: 'Do you accept payments ... credit card?', 4: 'Could you pay ... cash?', 5: 'I came here ... bicycle', 6: 'I came here ... a taxi', 7: 'Last book I read was ... Agatha Christie', 8: 'The light switch is ... the fridge', 9: 'I sent mail ... FedEx', 11: 'Over the year, I increased my salary ... $300', 12: 'He won in the race ... 0.2 second', 13: 'I came here ... the 6.45 bus', 14: 'The football game was watched ... millions of people', 15: 'I did that ... purpose', 16: 'Have you ever been bitten ... a horse?', 17: 'Last play I visited was ... Anton Checkhov', 18: 'Your place is ... my side', 20: 'I did that ... hand'}\n  Common items:\n  {1: 'I cracked it ... a hammer',\n   2: 'I did that ... chance',\n   3: 'Do you accept payments ... credit card?',\n   4: 'Could you pay ... cash?',\n   5: 'I came here ... bicycle',\n   6: 'I came here ... a taxi',\n   7: 'Last book I read was ... Agatha Christie',\n   8: 'The light switch is ... the fridge',\n   9: 'I sent mail ... FedEx',\n   11: 'Over the year, I increased my salary ... $300',\n   12: 'He won in the race ... 0.2 second',\n   13: 'I came here ... the 6.45 bus',\n   14: 'The football game was watched ... millions of people',\n   15: 'I did that ... purpose',\n   16: 'Have you ever been bitten ... a horse?',\n   17: 'Last play I visited was ... Anton Checkhov',\n   18: 'Your place is ... my side',\n   20: 'I did that ... hand'}\n  Left contains 2 more items:\n  {10: 'I did that ... chance', 19: 'I came here ... a taxi'}\n  Full diff:\n    {\n     1: 'I cracked it ... a hammer',\n     2: 'I did that ... chance',\n     3: 'Do you accept payments ... credit card?',\n     4: 'Could you pay ... cash?',\n     5: 'I came here ... bicycle',\n     6: 'I came here ... a taxi',\n     7: 'Last book I read was ... Agatha Christie',\n     8: 'The light switch is ... the fridge',\n     9: 'I sent mail ... FedEx',\n  +  10: 'I did that ... chance',\n     11: 'Over the year, I increased my salary ... $300',\n     12: 'He won in the race ... 0.2 second',\n     13: 'I came here ... the 6.45 bus',\n     14: 'The football game was watched ... millions of people',\n     15: 'I did that ... purpose',\n     16: 'Have you ever been bitten ... a horse?',\n     17: 'Last play I visited was ... Anton Checkhov',\n     18: 'Your place is ... my side',\n  +  19: 'I came here ... a taxi',\n     20: 'I did that ... hand',\n    }",
       "children" : [ {
         "name" : "test_check_questions_no_repeated",
-        "uid" : "eb54f490f304115f",
-        "parentUid" : "ffdec8a6b36cea5c4039c5418d895ddb",
+        "uid" : "62761506b0d74708",
+        "parentUid" : "06daaab816f0bc48d4ff2de94c209ca6",
         "status" : "failed",
         "time" : {
-          "start" : 1698749721470,
-          "stop" : 1698749726182,
-          "duration" : 4712
+          "start" : 1698750920812,
+          "stop" : 1698750924153,
+          "duration" : 3341
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "06daaab816f0bc48d4ff2de94c209ca6"
+    }, {
+      "name" : "AssertionError: Question is repeated\nassert {1: 'It depends ... how good the article is', 2: 'I congratulated him ... his promotion', 3: 'I will pay ... this meal', 4: 'I suffer ... backache', 5: 'I wanna something to protect my skin ... the sun', 6: 'I suspect ... they tried to cheat me with prices', 7: 'All blamed the incident ... me', 8: 'I need to pay ... the unitilities bill', 9: 'I thank you ... the invitation', 10: 'I live ... pastry from Zorpas and Papantoniou', 11: 'I forgive her ... a cruel joke', 12: 'The tunnel relies ... SSH connection', 13: 'All blamed the incident ... me', 14: 'She complimented me ... being smart.\\nWell, I said, it was pleasant', 15: 'He died ... three bullets in chest', 16: 'A human body consists ... flesh and 200 bones', 17: 'My success relies ... whether I could complete the task', 18: 'She never apologised ... that', 19: 'I need to pay ... money for a new image for my game', 20: 'I wanna something to protect my skin ... the sun', 21: 'The author barely lives ... donations', 22: 'The tunnel relies ... SSH connection', 23: 'I accused girls ... being cruel', 24: 'You could blame me ... that', 25: 'I appove ... how he loves to create games'} == {1: 'It depends ... how good the article is', 2: 'I congratulated him ... his promotion', 3: 'I will pay ... this meal', 4: 'I suffer ... backache', 5: 'I wanna something to protect my skin ... the sun', 6: 'I suspect ... they tried to cheat me with prices', 7: 'All blamed the incident ... me', 8: 'I need to pay ... the unitilities bill', 9: 'I thank you ... the invitation', 10: 'I live ... pastry from Zorpas and Papantoniou', 11: 'I forgive her ... a cruel joke', 12: 'The tunnel relies ... SSH connection', 14: 'She complimented me ... being smart.\\nWell, I said, it was pleasant', 15: 'He died ... three bullets in chest', 16: 'A human body consists ... flesh and 200 bones', 17: 'My success relies ... whether I could complete the task', 18: 'She never apologised ... that', 19: 'I need to pay ... money for a new image for my game', 21: 'The author barely lives ... donations', 23: 'I accused girls ... being cruel', 24: 'You could blame me ... that', 25: 'I appove ... how he loves to create games'}\n  Common items:\n  {1: 'It depends ... how good the article is',\n   2: 'I congratulated him ... his promotion',\n   3: 'I will pay ... this meal',\n   4: 'I suffer ... backache',\n   5: 'I wanna something to protect my skin ... the sun',\n   6: 'I suspect ... they tried to cheat me with prices',\n   7: 'All blamed the incident ... me',\n   8: 'I need to pay ... the unitilities bill',\n   9: 'I thank you ... the invitation',\n   10: 'I live ... pastry from Zorpas and Papantoniou',\n   11: 'I forgive her ... a cruel joke',\n   12: 'The tunnel relies ... SSH connection',\n   14: 'She complimented me ... being smart.\\nWell, I said, it was pleasant',\n   15: 'He died ... three bullets in chest',\n   16: 'A human body consists ... flesh and 200 bones',\n   17: 'My success relies ... whether I could complete the task',\n   18: 'She never apologised ... that',\n   19: 'I need to pay ... money for a new image for my game',\n   21: 'The author barely lives ... donations',\n   23: 'I accused girls ... being cruel',\n   24: 'You could blame me ... that',\n   25: 'I appove ... how he loves to create games'}\n  Left contains 3 more items:\n  {13: 'All blamed the incident ... me',\n   20: 'I wanna something to protect my skin ... the sun',\n   22: 'The tunnel relies ... SSH connection'}\n  Full diff:\n    {\n     1: 'It depends ... how good the article is',\n     2: 'I congratulated him ... his promotion',\n     3: 'I will pay ... this meal',\n     4: 'I suffer ... backache',\n     5: 'I wanna something to protect my skin ... the sun',\n     6: 'I suspect ... they tried to cheat me with prices',\n     7: 'All blamed the incident ... me',\n     8: 'I need to pay ... the unitilities bill',\n     9: 'I thank you ... the invitation',\n     10: 'I live ... pastry from Zorpas and Papantoniou',\n     11: 'I forgive her ... a cruel joke',\n     12: 'The tunnel relies ... SSH connection',\n  +  13: 'All blamed the incident ... me',\n     14: 'She complimented me ... being smart.\\n'\n         'Well, I said, it was pleasant',\n     15: 'He died ... three bullets in chest',\n     16: 'A human body consists ... flesh and 200 bones',\n     17: 'My success relies ... whether I could complete the task',\n     18: 'She never apologised ... that',\n     19: 'I need to pay ... money for a new image for my game',\n  +  20: 'I wanna something to protect my skin ... the sun',\n     21: 'The author barely lives ... donations',\n  +  22: 'The tunnel relies ... SSH connection',\n     23: 'I accused girls ... being cruel',\n     24: 'You could blame me ... that',\n     25: 'I appove ... how he loves to create games',\n    }",
+      "children" : [ {
+        "name" : "test_check_questions_no_repeated",
+        "uid" : "24a7ed133a02ea6a",
+        "parentUid" : "0f456c3cef79d633155e9ab48695c683",
+        "status" : "failed",
+        "time" : {
+          "start" : 1698751039470,
+          "stop" : 1698751043035,
+          "duration" : 3565
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ffdec8a6b36cea5c4039c5418d895ddb"
+      "uid" : "0f456c3cef79d633155e9ab48695c683"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
