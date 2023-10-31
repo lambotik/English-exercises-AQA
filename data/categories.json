@@ -1,5 +1,86 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_check_main_options",
+        "uid" : "ac7533a5201e2f11",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1698753036496,
+          "stop" : 1698753037816,
+          "duration" : 1320
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_check_questions_no_repeated",
+        "uid" : "d6557d08aab8e7f7",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1698753038850,
+          "stop" : 1698753040342,
+          "duration" : 1492
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_args_is_not_presence",
+        "uid" : "53af6396c59a6e61",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1698753041353,
+          "stop" : 1698753042681,
+          "duration" : 1328
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    }, {
+      "name" : "AssertionError: Question is repeated\nassert {1: 'I did that ... accident', 2: 'I did that ... purpose', 3: 'I came here ... a taxi', 4: 'Over the year, I increased my salary ... 20 per cent', 5: 'Last book I read was ... Agatha Christie', 6: 'Could you pay ... cash?', 7: 'I did that ... hand', 8: 'Have you ever been bitten ... a dog?', 9: 'I cracked it ... a hammer', 10: 'I came here ... ferrow', 11: 'I sent the mail ... FedEx', 12: 'The light switch is ... the fridge', 13: 'Do you accept payments ... credit card?', 14: 'I came here ... a taxi', 15: 'He won in the race ... 0.2 second', 16: 'Last play I visited was ... Anton Checkhov', 17: 'I did that ... accident', 18: 'The football game was watched ... millions of people', 19: 'I came here ... the 6.45 train', 20: 'Your place is ... my side'} == {1: 'I did that ... accident', 2: 'I did that ... purpose', 3: 'I came here ... a taxi', 4: 'Over the year, I increased my salary ... 20 per cent', 5: 'Last book I read was ... Agatha Christie', 6: 'Could you pay ... cash?', 7: 'I did that ... hand', 8: 'Have you ever been bitten ... a dog?', 9: 'I cracked it ... a hammer', 10: 'I came here ... ferrow', 11: 'I sent the mail ... FedEx', 12: 'The light switch is ... the fridge', 13: 'Do you accept payments ... credit card?', 15: 'He won in the race ... 0.2 second', 16: 'Last play I visited was ... Anton Checkhov', 18: 'The football game was watched ... millions of people', 19: 'I came here ... the 6.45 train', 20: 'Your place is ... my side'}\n  Common items:\n  {1: 'I did that ... accident',\n   2: 'I did that ... purpose',\n   3: 'I came here ... a taxi',\n   4: 'Over the year, I increased my salary ... 20 per cent',\n   5: 'Last book I read was ... Agatha Christie',\n   6: 'Could you pay ... cash?',\n   7: 'I did that ... hand',\n   8: 'Have you ever been bitten ... a dog?',\n   9: 'I cracked it ... a hammer',\n   10: 'I came here ... ferrow',\n   11: 'I sent the mail ... FedEx',\n   12: 'The light switch is ... the fridge',\n   13: 'Do you accept payments ... credit card?',\n   15: 'He won in the race ... 0.2 second',\n   16: 'Last play I visited was ... Anton Checkhov',\n   18: 'The football game was watched ... millions of people',\n   19: 'I came here ... the 6.45 train',\n   20: 'Your place is ... my side'}\n  Left contains 2 more items:\n  {14: 'I came here ... a taxi', 17: 'I did that ... accident'}\n  Full diff:\n    {\n     1: 'I did that ... accident',\n     2: 'I did that ... purpose',\n     3: 'I came here ... a taxi',\n     4: 'Over the year, I increased my salary ... 20 per cent',\n     5: 'Last book I read was ... Agatha Christie',\n     6: 'Could you pay ... cash?',\n     7: 'I did that ... hand',\n     8: 'Have you ever been bitten ... a dog?',\n     9: 'I cracked it ... a hammer',\n     10: 'I came here ... ferrow',\n     11: 'I sent the mail ... FedEx',\n     12: 'The light switch is ... the fridge',\n     13: 'Do you accept payments ... credit card?',\n  +  14: 'I came here ... a taxi',\n     15: 'He won in the race ... 0.2 second',\n     16: 'Last play I visited was ... Anton Checkhov',\n  +  17: 'I did that ... accident',\n     18: 'The football game was watched ... millions of people',\n     19: 'I came here ... the 6.45 train',\n     20: 'Your place is ... my side',\n    }",
+      "children" : [ {
+        "name" : "test_check_questions_no_repeated",
+        "uid" : "7e7815b412ab58de",
+        "parentUid" : "40360d24da50b8ce71a8545f164d2846",
+        "status" : "failed",
+        "time" : {
+          "start" : 1698753114692,
+          "stop" : 1698753118588,
+          "duration" : 3896
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "40360d24da50b8ce71a8545f164d2846"
+    }, {
+      "name" : "AssertionError: Question is repeated\nassert {1: 'I accused girls ... being cruel', 2: 'I wanna something to protect my skin ... the sun', 3: 'I wanna something to protect my skin ... the sun', 4: 'He died ... suffocation', 5: 'It depends ... how good the article is', 6: 'I live ... pastry from Zorpas and Papantoniou', 7: 'A human body consists ... flesh and 200 bones', 8: 'I appove ... how he loves to create games', 9: 'I need to pay ... a speed ticket', 10: 'You could blame me ... that', 11: 'I suffer ... backache', 12: 'My success relies ... whether I could complete the task', 13: 'All blamed the incident ... me', 14: 'She never apologised ... that', 15: 'I need to pay ... the unitilities bill', 16: 'The tunnel relies ... SSH connection', 17: 'I forgive her ... a cruel joke', 18: 'I congratulated him ... his promotion', 19: 'The tunnel relies ... SSH connection', 20: 'The author barely lives ... donations', 21: 'She complimented me ... being smart.\\nWell, I said, it was pleasant', 22: 'I will pay ... this meal', 23: 'All blamed the incident ... me', 24: 'I suspect ... they tried to cheat me with prices', 25: 'I thank you ... the invitation'} == {1: 'I accused girls ... being cruel', 2: 'I wanna something to protect my skin ... the sun', 4: 'He died ... suffocation', 5: 'It depends ... how good the article is', 6: 'I live ... pastry from Zorpas and Papantoniou', 7: 'A human body consists ... flesh and 200 bones', 8: 'I appove ... how he loves to create games', 9: 'I need to pay ... a speed ticket', 10: 'You could blame me ... that', 11: 'I suffer ... backache', 12: 'My success relies ... whether I could complete the task', 13: 'All blamed the incident ... me', 14: 'She never apologised ... that', 15: 'I need to pay ... the unitilities bill', 16: 'The tunnel relies ... SSH connection', 17: 'I forgive her ... a cruel joke', 18: 'I congratulated him ... his promotion', 20: 'The author barely lives ... donations', 21: 'She complimented me ... being smart.\\nWell, I said, it was pleasant', 22: 'I will pay ... this meal', 24: 'I suspect ... they tried to cheat me with prices', 25: 'I thank you ... the invitation'}\n  Common items:\n  {1: 'I accused girls ... being cruel',\n   2: 'I wanna something to protect my skin ... the sun',\n   4: 'He died ... suffocation',\n   5: 'It depends ... how good the article is',\n   6: 'I live ... pastry from Zorpas and Papantoniou',\n   7: 'A human body consists ... flesh and 200 bones',\n   8: 'I appove ... how he loves to create games',\n   9: 'I need to pay ... a speed ticket',\n   10: 'You could blame me ... that',\n   11: 'I suffer ... backache',\n   12: 'My success relies ... whether I could complete the task',\n   13: 'All blamed the incident ... me',\n   14: 'She never apologised ... that',\n   15: 'I need to pay ... the unitilities bill',\n   16: 'The tunnel relies ... SSH connection',\n   17: 'I forgive her ... a cruel joke',\n   18: 'I congratulated him ... his promotion',\n   20: 'The author barely lives ... donations',\n   21: 'She complimented me ... being smart.\\nWell, I said, it was pleasant',\n   22: 'I will pay ... this meal',\n   24: 'I suspect ... they tried to cheat me with prices',\n   25: 'I thank you ... the invitation'}\n  Left contains 3 more items:\n  {3: 'I wanna something to protect my skin ... the sun',\n   19: 'The tunnel relies ... SSH connection',\n   23: 'All blamed the incident ... me'}\n  Full diff:\n    {\n     1: 'I accused girls ... being cruel',\n     2: 'I wanna something to protect my skin ... the sun',\n  +  3: 'I wanna something to protect my skin ... the sun',\n     4: 'He died ... suffocation',\n     5: 'It depends ... how good the article is',\n     6: 'I live ... pastry from Zorpas and Papantoniou',\n     7: 'A human body consists ... flesh and 200 bones',\n     8: 'I appove ... how he loves to create games',\n     9: 'I need to pay ... a speed ticket',\n     10: 'You could blame me ... that',\n     11: 'I suffer ... backache',\n     12: 'My success relies ... whether I could complete the task',\n     13: 'All blamed the incident ... me',\n     14: 'She never apologised ... that',\n     15: 'I need to pay ... the unitilities bill',\n     16: 'The tunnel relies ... SSH connection',\n     17: 'I forgive her ... a cruel joke',\n     18: 'I congratulated him ... his promotion',\n  +  19: 'The tunnel relies ... SSH connection',\n     20: 'The author barely lives ... donations',\n     21: 'She complimented me ... being smart.\\n'\n         'Well, I said, it was pleasant',\n     22: 'I will pay ... this meal',\n  +  23: 'All blamed the incident ... me',\n     24: 'I suspect ... they tried to cheat me with prices',\n     25: 'I thank you ... the invitation',\n    }",
+      "children" : [ {
+        "name" : "test_check_questions_no_repeated",
+        "uid" : "d9b427181f2c3ac2",
+        "parentUid" : "2b39ba3f7e00a257e98eb73d80209415",
+        "status" : "failed",
+        "time" : {
+          "start" : 1698753256562,
+          "stop" : 1698753260873,
+          "duration" : 4311
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2b39ba3f7e00a257e98eb73d80209415"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }
