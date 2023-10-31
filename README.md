@@ -1,6 +1,7 @@
 # English-exercises-AQA
 Tests for [English-exercises](https://github.com/Areso/English-exercises)
 
+Current allure-report here: [Allure-report](https://lambotik.github.io/English-exercises-AQA/#)
 
 While this for simple run, later I'll correct it.
 
@@ -10,6 +11,6 @@ While this for simple run, later I'll correct it.
    
 3 ```pip3 install -r requirements.txt```
    
-4 ```pytest -s -vv --alluredir=test_result/ tests/```
+4 ```pytest -s -vv --alluredir=allure-results```
    
-5 ```allure serve test_result```
+5 ```allure serve allure-results```
