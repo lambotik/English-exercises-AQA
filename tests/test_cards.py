@@ -626,6 +626,7 @@ class TestChapter5:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
+
 @allure.suite('Synonyms')
 class TestSynonyms:
     @allure.sub_suite('Test synonyms.')

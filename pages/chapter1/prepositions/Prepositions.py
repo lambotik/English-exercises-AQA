@@ -97,11 +97,11 @@ class PrepositionsPages(BasePage):
                 assert result is True, 'Clicked button is not selected'
                 try:
                     assert button_value == correct_answer and correct_or_wrong == 'CORRECT'
-                    print('\n', '#' * 10, 'Correct answer!', '#' * 10, '\n')
+                    # print('\n', '#' * 10, 'Correct answer!', '#' * 10, '\n')
                     # print('#' * 10, "It's right answer.", '#' * 10)
                     # print('\n')
                 except Exception as ex:
-                    print('\n', ex, '\n', '#' * 10, 'Wrong answer!', '#' * 10, '\n')
+                    print(ex, '\n', '#' * 10, 'Wrong answer!', '#' * 10)
                 main_page.click_next_card()
             with allure.step('*' * 90):
                 pass
