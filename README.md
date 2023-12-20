@@ -1,7 +1,10 @@
 # English-exercises-AQA
 ## Project stack:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" width="60" heigh="60"/> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" width="60" heigh="60"/> 
+
+
+[](https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css)
           
           
           
