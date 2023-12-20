@@ -3,27 +3,11 @@
 
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" width="70" heigh="70"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" width="80" heigh="80"/> | <img src="https://github.com/allure-framework/allure2/blob/master/.idea/icon.png" width="60" heigh="60"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" width="60" heigh="60"/> |
 | -------- | -------- | -------- | -------- | -------- |
-
-
- 
-
-
-   
-
- 
-          
-          
-          
-          
-          
-          
-          
-
+               
 
 ___
 Tests for [English-exercises](https://github.com/Areso/English-exercises)
 
-Current allure-report here: [Allure-report](https://lambotik.github.io/English-exercises-AQA/#)
 
 While this for simple run, later I'll correct it.
 
@@ -37,5 +21,5 @@ While this for simple run, later I'll correct it.
    
 5 ```allure serve allure-results```
 ___
-### You can view the current report by click on Allure logo:  [![Allure Report](https://github.com/allure-framework/allure2/blob/master/.idea/icon.png)](https://lambotik.github.io/English-exercises-AQA/)
+### You can view the current report here:  [Allure Report](https://lambotik.github.io/English-exercises-AQA/)
 
