@@ -1,4 +1,8 @@
 # English-exercises-AQA
+## Project stack:
+[![](https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/python.svg?short_path=c4b46b6)]
+
+___
 Tests for [English-exercises](https://github.com/Areso/English-exercises)
 
 Current allure-report here: [Allure-report](https://lambotik.github.io/English-exercises-AQA/#)
