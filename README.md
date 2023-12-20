@@ -37,5 +37,5 @@ While this for simple run, later I'll correct it.
    
 5 ```allure serve allure-results```
 ___
-You can view the current report by click on Allure logo:  [![Allure Report](https://github.com/allure-framework/allure2/blob/master/.idea/icon.png)](https://lambotik.github.io/English-exercises-AQA/)
+### You can view the current report by click on Allure logo:  [![Allure Report](https://github.com/allure-framework/allure2/blob/master/.idea/icon.png)](https://lambotik.github.io/English-exercises-AQA/)
 
