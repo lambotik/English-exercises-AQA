@@ -1,7 +1,7 @@
 # English-exercises-AQA
 ## Project stack:
 
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> |1||2|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> | 1 | 2 |
 | ----------------------- |
 
 
