@@ -1,6 +1,6 @@
 # English-exercises-AQA
 ## Project stack:
-[![](https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/python.svg?short_path=c4b46b6)]
+[![](https://img.shields.io/badge/-Python-090909?style=plastic&logo=Python&logoColor=47C5FB)]
 
 ___
 Tests for [English-exercises](https://github.com/Areso/English-exercises)
