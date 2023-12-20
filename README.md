@@ -14,3 +14,6 @@ While this for simple run, later I'll correct it.
 4 ```pytest -s -vv --alluredir=allure-results```
    
 5 ```allure serve allure-results```
+___
+You can view the current report here: [![Allure Report](https://github.com/allure-framework/allure2/blob/master/.idea/icon.png)](https://lambotik.github.io/English-exercises-AQA/)
+
