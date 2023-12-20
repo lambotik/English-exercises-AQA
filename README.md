@@ -1,7 +1,8 @@
 # English-exercises-AQA
 ## Project stack:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" width="60" heigh="60"/> <i class="devicon-github-original-wordmark" width="60" heigh="60"></i>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" width="60" heigh="60"/> <i class="devicon-github-original-wordmark colored" width="60" heigh="60"></i>
+          
           
           
           
