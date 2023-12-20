@@ -1,12 +1,13 @@
 # import allure
 # import pytest
+#
 # from pages.chapter1.prepositions.Prepositions import PrepositionsPages
 # from pages.chapter2.irregular_verbs import IrregularVerbsPages
 #
 #
-# @allure.suite('Chapter 1')
+# @allure.epic('Chapter 1')
 # class TestChapter1:
-#     @allure.sub_suite('1.1. Test Prepositions Of Time Page.')
+#     @allure.suite('1.1. Test Prepositions Of Time Page.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_of_time')
 #     class TestPrepositions_1_1:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_of_time'
@@ -37,7 +38,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.2. Test Put the correct preposition!')
+#     @allure.suite('1.2. Test Put the correct preposition!')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_of_place')
 #     class TestPrepositions_1_2:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_of_place'
@@ -98,7 +99,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.4. To/at/in/into.')
+#     @allure.suite('1.4. To/at/in/into.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_to_at_in_into')
 #     class TestPrepositions_1_4:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_to_at_in_into'
@@ -129,7 +130,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.5. On/in/at (other uses).')
+#     @allure.suite('1.5. On/in/at (other uses).')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_on_in_at')
 #     class TestPrepositions_1_5:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_on_in_at'
@@ -160,7 +161,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.6. Usage of "by" preposition.')
+#     @allure.suite('1.6. Usage of "by" preposition.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_by')
 #     class TestPrepositions_1_6:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_by'
@@ -192,7 +193,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.7. Prepositions with nouns.')
+#     @allure.suite('1.7. Prepositions with nouns.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_nouns')
 #     class TestPrepositions_1_7:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_nouns'
@@ -223,7 +224,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.8. Prepositions with adjectives.')
+#     @allure.suite('1.8. Prepositions with adjectives.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives')
 #     class TestPrepositions_1_8:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives'
@@ -254,7 +255,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.9. Prepositions with adjectives 2.')
+#     @allure.suite('1.9. Prepositions with adjectives 2.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives2')
 #     class TestPrepositions_1_9:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives2'
@@ -285,7 +286,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.10. Prepositions with verbs.')
+#     @allure.suite('1.10. Prepositions with verbs.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs')
 #     class TestPrepositions_1_10:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs'
@@ -316,7 +317,7 @@
 #             main_page.open()
 #             (main_page.check_args_is_not_presence(main_page))
 #
-#     @allure.sub_suite('1.11. Prepositions with verbs (p2).')
+#     @allure.suite('1.11. Prepositions with verbs (p2).')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs2')
 #     class TestPrepositions_1_11:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs2'
@@ -347,7 +348,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.12. Prepositions with verbs (p3).')
+#     @allure.suite('1.12. Prepositions with verbs (p3).')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs3')
 #     class TestPrepositions_1_12:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs3'
@@ -378,7 +379,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.13. Prepositions with verbs (p4).')
+#     @allure.suite('1.13. Prepositions with verbs (p4).')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs4')
 #     class TestPrepositions_1_13:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs4'
@@ -409,7 +410,7 @@
 #             main_page.open()
 #             main_page.check_args_is_not_presence(main_page)
 #
-#     @allure.sub_suite('1.14. Prepositions with verbs (p5).')
+#     @allure.suite('1.14. Prepositions with verbs (p5).')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs5')
 #     class TestPrepositions_1_14:
 #         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs5'
@@ -441,9 +442,9 @@
 #             main_page.check_args_is_not_presence(main_page)
 #
 #
-# @allure.suite('Chapter 2')
+# @allure.epic('Chapter 2')
 # class TestChapter2:
-#     @allure.sub_suite('2 Test Irregular verbs. Write 2nd and 3rd forms of a verb.')
+#     @allure.suite('2 Test Irregular verbs. Write 2nd and 3rd forms of a verb.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=irregular_verbs')
 #     class TestIrregularVerbs:
 #         url = 'https://english.areso.pro/lesson.html?lesson=irregular_verbs'
@@ -474,9 +475,9 @@
 #             main_page.check_args_is_not_presence(main_page)
 #
 #
-# @allure.suite('Chapter 3')
+# @allure.epic('Chapter 3')
 # class TestChapter3:
-#     @allure.sub_suite('Test Do or Make.')
+#     @allure.suite('Test Do or Make.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=do_or_make')
 #     class TestDoOrMake:
 #         url = 'https://english.areso.pro/lesson.html?lesson=do_or_make'
@@ -507,9 +508,9 @@
 #             main_page.check_args_is_not_presence(main_page)
 #
 #
-# @allure.suite('Chapter 4')
+# @allure.epic('Chapter 4')
 # class TestChapter4:
-#     @allure.sub_suite('Test Negative Prefixes')
+#     @allure.suite('Test Negative Prefixes')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=negative_prefixes')
 #     class TestIrregularVerbs:
 #         url = 'https://english.areso.pro/lesson.html?lesson=negative_prefixes'
@@ -540,9 +541,9 @@
 #             main_page.check_args_is_not_presence(main_page)
 #
 #
-# @allure.suite('Chapter 5')
+# @allure.epic('Chapter 5')
 # class TestChapter5:
-#     @allure.sub_suite('Test Adjectives.')
+#     @allure.suite('Test Adjectives.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=adjectives')
 #     class TestIrregularVerbs:
 #         url = 'https://english.areso.pro/lesson.html?lesson=adjectives'
@@ -573,9 +574,9 @@
 #             main_page.check_args_is_not_presence(main_page)
 #
 #
-# @allure.suite('Synonyms')
+# @allure.epic('Synonyms')
 # class TestSynonyms:
-#     @allure.sub_suite('Test synonyms.')
+#     @allure.suite('Test synonyms.')
 #     @allure.link('https://english.areso.pro/lesson.html?lesson=synonyms')
 #     class TestIrregularVerbs:
 #         url = 'https://english.areso.pro/lesson.html?lesson=synonyms'

@@ -3,9 +3,9 @@ from pages.chapter1.prepositions.Prepositions import PrepositionsPages
 from pages.chapter2.irregular_verbs import IrregularVerbsPages
 
 
-@allure.suite('Chapter 4')
+@allure.epic('Chapter 4')
 class TestChapter4:
-    @allure.sub_suite('Test Negative Prefixes')
+    @allure.suite('Test Negative Prefixes')
     @allure.link('https://english.areso.pro/lesson.html?lesson=negative_prefixes')
     class TestIrregularVerbs:
         url = 'https://english.areso.pro/lesson.html?lesson=negative_prefixes'

@@ -2,9 +2,9 @@ import allure
 from pages.chapter1.prepositions.Prepositions import PrepositionsPages
 
 
-@allure.suite('Chapter 3')
+@allure.epic('Chapter 3')
 class TestChapter3:
-    @allure.sub_suite('Test Do or Make.')
+    @allure.suite('Test Do or Make.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=do_or_make')
     class TestDoOrMake:
         url = 'https://english.areso.pro/lesson.html?lesson=do_or_make'

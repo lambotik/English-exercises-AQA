@@ -3,9 +3,9 @@ import pytest
 from pages.chapter1.prepositions.Prepositions import PrepositionsPages
 
 
-@allure.suite('Chapter 1')
+@allure.epic('Chapter 1')
 class TestChapter1:
-    @allure.sub_suite('1.1. Test Prepositions Of Time Page.')
+    @allure.suite('1.1. Test Prepositions Of Time Page.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_of_time')
     class TestPrepositions_1_1:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_of_time'
@@ -36,7 +36,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.2. Test Put the correct preposition!')
+    @allure.suite('1.2. Test Put the correct preposition!')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_of_place')
     class TestPrepositions_1_2:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_of_place'
@@ -66,7 +66,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.3. In/on time, at/in the end/beginning.')
+    @allure.suite('1.3. In/on time, at/in the end/beginning.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_in_on_time_at_in_the_end')
     class TestPrepositions_1_3:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_in_on_time_at_in_the_end'
@@ -97,7 +97,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.4. To/at/in/into.')
+    @allure.suite('1.4. To/at/in/into.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_to_at_in_into')
     class TestPrepositions_1_4:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_to_at_in_into'
@@ -128,7 +128,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.5. On/in/at (other uses).')
+    @allure.suite('1.5. On/in/at (other uses).')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_on_in_at')
     class TestPrepositions_1_5:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_on_in_at'
@@ -159,7 +159,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.6. Usage of "by" preposition.')
+    @allure.suite('1.6. Usage of "by" preposition.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_by')
     class TestPrepositions_1_6:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_by'
@@ -191,7 +191,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.7. Prepositions with nouns.')
+    @allure.suite('1.7. Prepositions with nouns.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_nouns')
     class TestPrepositions_1_7:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_nouns'
@@ -222,7 +222,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.8. Prepositions with adjectives.')
+    @allure.suite('1.8. Prepositions with adjectives.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives')
     class TestPrepositions_1_8:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives'
@@ -253,7 +253,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.9. Prepositions with adjectives 2.')
+    @allure.suite('1.9. Prepositions with adjectives 2.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives2')
     class TestPrepositions_1_9:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_adjectives2'
@@ -284,7 +284,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.10. Prepositions with verbs.')
+    @allure.suite('1.10. Prepositions with verbs.')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs')
     class TestPrepositions_1_10:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs'
@@ -315,7 +315,7 @@ class TestChapter1:
             main_page.open()
             (main_page.check_args_is_not_presence(main_page))
 
-    @allure.sub_suite('1.11. Prepositions with verbs (p2).')
+    @allure.suite('1.11. Prepositions with verbs (p2).')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs2')
     class TestPrepositions_1_11:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs2'
@@ -346,7 +346,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.12. Prepositions with verbs (p3).')
+    @allure.suite('1.12. Prepositions with verbs (p3).')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs3')
     class TestPrepositions_1_12:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs3'
@@ -377,7 +377,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.13. Prepositions with verbs (p4).')
+    @allure.suite('1.13. Prepositions with verbs (p4).')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs4')
     class TestPrepositions_1_13:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs4'
@@ -408,7 +408,7 @@ class TestChapter1:
             main_page.open()
             main_page.check_args_is_not_presence(main_page)
 
-    @allure.sub_suite('1.14. Prepositions with verbs (p5).')
+    @allure.suite('1.14. Prepositions with verbs (p5).')
     @allure.link('https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs5')
     class TestPrepositions_1_14:
         url = 'https://english.areso.pro/lesson.html?lesson=prepositions_with_verbs5'
