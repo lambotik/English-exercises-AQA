@@ -2,7 +2,7 @@
 ## Project stack:
 
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="60" heigh="60"/> | 1 | 2 |
-| ----------------------- | ------------------------ | ---------------- |
+| ----------------------------------------------------------------------------------- | ------------------------ | ---------------- |
 
 
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" width="70" heigh="70"/> |
